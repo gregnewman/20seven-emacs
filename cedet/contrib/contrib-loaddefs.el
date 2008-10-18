@@ -65,7 +65,7 @@ Setup buffer for parse.
 
 ;;;### (autoloads nil nil ("cedet-contrib-load.el" "cedet-contrib.el"
 ;;;;;;  "semanticdb-javascript.el" "wisent-csharp-wy.el" "wisent-javascript-jv-wy.el")
-;;;;;;  (18680 20311 260475))
+;;;;;;  (18682 9499 688478))
 
 ;;;***
 

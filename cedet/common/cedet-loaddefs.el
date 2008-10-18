@@ -129,7 +129,7 @@ See a pretty-printed representation of FUNCTION-NAME.
 
 ;;;### (autoloads nil nil ("cedet-compat.el" "cedet-files.el" "cedet-load.el"
 ;;;;;;  "cedet.el" "ezimage.el" "mode-local.el" "sformat.el" "working.el")
-;;;;;;  (18680 20281 968003))
+;;;;;;  (18682 9481 855014))
 
 ;;;***
 
