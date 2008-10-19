@@ -11,4 +11,4 @@
                                         ; saddle brown
 (cond (window-system
        (custom-set-faces
-        '(highlight-current-line-face ((t (:background "midnight blue")))))))
+        '(highlight-current-line-face ((t (:background "#333333")))))))

@@ -11,22 +11,20 @@
 (require 'pycomplete)
 
 ; pymacs & rope
-;(require 'pymacs)
-;(pymacs-load "ropemacs" "rope-")
 (autoload 'pymacs-apply "pymacs")
 (autoload 'pymacs-call "pymacs")
 (autoload 'pymacs-eval "pymacs" nil t)
 (autoload 'pymacs-exec "pymacs" nil t)
 (autoload 'pymacs-load "pymacs" nil t)
-;;(eval-after-load "pymacs"
-;;  '(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY"))
 
 ; django
-;(define-skeleton django-trans
-;   	  "django translate template tag"
-;   	  nil
-;   	  "{% trans '" _ "' %}")
-;(define-key global-map  "\C-xt"         'django-trans)
+(define-skeleton django-trans
+   	  "django translate template tag"
+   	  nil
+   	  "{% trans '" _ "' %}")
+(define-key global-map  "\C-xt" 'django-trans)
+; django html mode
+(require 'django-html-mode)
 
 ; python doc search
 (defun py-doc-search (w)
