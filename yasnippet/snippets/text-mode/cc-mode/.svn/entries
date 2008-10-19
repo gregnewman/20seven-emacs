@@ -1,0 +1,133 @@
+8
+
+dir
+304
+http://yasnippet.googlecode.com/svn/trunk/snippets/text-mode/cc-mode
+http://yasnippet.googlecode.com/svn
+
+
+
+2008-09-10T12:01:23.760228Z
+292
+pluskid
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b2103351-7347-0410-aa0e-656c9fbaa8cf
+
+csharp-mode
+dir
+
+do
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+4bc4575ec8fb962f20958d36211e23cf
+2008-03-10T12:19:19.654227Z
+124
+pluskid
+
+c-mode
+dir
+
+main
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+be2fa026efdf4d7eab80aab87e1efefc
+2008-05-29T04:10:56.898907Z
+263
+pluskid
+
+once
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+a87223d570a21b4b8d2870277c048600
+2008-03-10T12:19:19.654227Z
+124
+pluskid
+
+struct
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+81bf860fa9a1d4e972e03770ae24ff05
+2008-03-10T12:19:19.654227Z
+124
+pluskid
+
+for
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+3d1ffc9d8e6af0858586c05131fda9ca
+2008-03-10T12:19:19.654227Z
+124
+pluskid
+
+inc.1
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+6b5f1e9c8de9104cdddd1d3578e8581a
+2008-03-10T12:19:19.654227Z
+124
+pluskid
+
+inc
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+b6978f761db95df254b119543155d585
+2008-03-10T12:19:19.654227Z
+124
+pluskid
+
+c++-mode
+dir
+
+if
+file
+
+
+
+
+2008-10-19T13:53:00.000000Z
+1c938f7e78a2e7ff848ef60f3397bca3
+2008-03-10T12:19:19.654227Z
+124
+pluskid
+
