@@ -24,6 +24,7 @@
     ))
  
 (load-cfg-files '("cfg_main"
+                  "cfg_linum"
                   "cfg_mmm_mode"
                   "cfg_python"
                   "cfg_theme"
@@ -31,7 +32,6 @@
                   "cfg_cedet"
                   "cfg_ecb"
                   "cfg_git"
-                  "cfg_linum"
 ;                  "cfg_keybindings"
 ;                  "cfg_css-mode"
 ;                  "cfg_javascript"
