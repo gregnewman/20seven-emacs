@@ -30,8 +30,8 @@ Kernel configured for up to 2 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1
 Primary memory available: 2.00 gigabytes
-Default processor set: 151 tasks, 676 threads, 2 processors
-Load average: 1.35, Mach factor: 1.02
+Default processor set: 144 tasks, 666 threads, 2 processors
+Load average: 0.73, Mach factor: 1.26
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -74,7 +74,7 @@ configure:1753: $EMACS -batch -q -eval '(while load-path (princ (concat (car loa
 configure:1756: $? = 0
 configure:1769: result: ${datadir}/emacs/site-lisp
 configure:1780: checking for emacs version
-emacs -batch -eval (let ((x (and (boundp 'emacs-major-version) (format "%d.%d" emacs-major-version emacs-minor-version)))) (write-region (if (stringp x) (princ x) (prin1-to-string x)) nil "./conftest-13492"))
+emacs -batch -eval (let ((x (and (boundp 'emacs-major-version) (format "%d.%d" emacs-major-version emacs-minor-version)))) (write-region (if (stringp x) (princ x) (prin1-to-string x)) nil "./conftest-36428"))
 => 22.1
 configure:1811: result: 22.1
 configure:1950: creating ./config.status
@@ -117,11 +117,11 @@ am_cv_lispdir='${datadir}/emacs/site-lisp'
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /Users/greg/emacs/mmm-mode/missing --run aclocal-1.7'
-AMTAR='${SHELL} /Users/greg/emacs/mmm-mode/missing --run tar'
-AUTOCONF='${SHELL} /Users/greg/emacs/mmm-mode/missing --run autoconf'
-AUTOHEADER='${SHELL} /Users/greg/emacs/mmm-mode/missing --run autoheader'
-AUTOMAKE='${SHELL} /Users/greg/emacs/mmm-mode/missing --run automake-1.7'
+ACLOCAL='${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run aclocal-1.7'
+AMTAR='${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run tar'
+AUTOCONF='${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run autoconf'
+AUTOHEADER='${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run autoheader'
+AUTOMAKE='${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run automake-1.7'
 AWK='awk'
 CYGPATH_W='echo'
 DEFS='-DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE=\"mmm-mode\" -DVERSION=\"0.4.8\" '
@@ -136,7 +136,7 @@ INSTALL_STRIP_PROGRAM='${SHELL} $(install_sh) -c -s'
 LIBOBJS=''
 LIBS=''
 LTLIBOBJS=''
-MAKEINFO='${SHELL} /Users/greg/emacs/mmm-mode/missing --run makeinfo'
+MAKEINFO='${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run makeinfo'
 PACKAGE='mmm-mode'
 PACKAGE_BUGREPORT=''
 PACKAGE_NAME=''
@@ -157,7 +157,7 @@ exec_prefix='${prefix}'
 host_alias=''
 includedir='${prefix}/include'
 infodir='${prefix}/info'
-install_sh='/Users/greg/emacs/mmm-mode/install-sh'
+install_sh='/Users/greg/.emacs.d/mmm-mode/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 lispdir='${datadir}/emacs/site-lisp'

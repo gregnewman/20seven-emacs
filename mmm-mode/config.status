@@ -468,13 +468,13 @@ s,@INSTALL_DATA@,${INSTALL} -m 644,;t t
 s,@CYGPATH_W@,echo,;t t
 s,@PACKAGE@,mmm-mode,;t t
 s,@VERSION@,0.4.8,;t t
-s,@ACLOCAL@,${SHELL} /Users/greg/emacs/mmm-mode/missing --run aclocal-1.7,;t t
-s,@AUTOCONF@,${SHELL} /Users/greg/emacs/mmm-mode/missing --run autoconf,;t t
-s,@AUTOMAKE@,${SHELL} /Users/greg/emacs/mmm-mode/missing --run automake-1.7,;t t
-s,@AUTOHEADER@,${SHELL} /Users/greg/emacs/mmm-mode/missing --run autoheader,;t t
-s,@MAKEINFO@,${SHELL} /Users/greg/emacs/mmm-mode/missing --run makeinfo,;t t
-s,@AMTAR@,${SHELL} /Users/greg/emacs/mmm-mode/missing --run tar,;t t
-s,@install_sh@,/Users/greg/emacs/mmm-mode/install-sh,;t t
+s,@ACLOCAL@,${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run aclocal-1.7,;t t
+s,@AUTOCONF@,${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run autoconf,;t t
+s,@AUTOMAKE@,${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run automake-1.7,;t t
+s,@AUTOHEADER@,${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run autoheader,;t t
+s,@MAKEINFO@,${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run makeinfo,;t t
+s,@AMTAR@,${SHELL} /Users/greg/.emacs.d/mmm-mode/missing --run tar,;t t
+s,@install_sh@,/Users/greg/.emacs.d/mmm-mode/install-sh,;t t
 s,@STRIP@,,;t t
 s,@ac_ct_STRIP@,,;t t
 s,@INSTALL_STRIP_PROGRAM@,${SHELL} $(install_sh) -c -s,;t t
