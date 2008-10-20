@@ -1,3 +1,4 @@
+(setq load-path (cons "~/emacs" load-path))
 (setq load-path (cons "~/emacs/cedet/common" load-path))
 (setq load-path (cons "~/emacs/yasnippet" load-path))
 (setq load-path (cons "~/emacs/Pymacs" load-path))
