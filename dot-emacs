@@ -23,6 +23,7 @@
  
 (load-cfg-files '("cfg_main"
                   "cfg_yasnippet"
+                  "cfg_browse_kill_ring"
                   "cfg_linum"
                   "cfg_mmm_mode"
                   "cfg_python"
