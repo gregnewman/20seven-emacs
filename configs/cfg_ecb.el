@@ -9,6 +9,7 @@
  '(ecb-layout-name "left13")
  '(ecb-layout-nr 9)
  '(ecb-layout-window-sizes (quote (("left13" (0.22727272727272727 . 0.975)))))
+ '(ecb-source-file-regexps (quote ((".*" ("\\(^\\(\\.\\|#\\)\\|\\(~$\\|\\.\\(pyc\\|elc\\|obj\\|o\\|class\\|lib\\|dll\\|a\\|so\\|cache\\)$\\)\\)") ("^\\.\\(emacs\\|gnus\\)$")))))
  '(ecb-non-semantic-parsing-function nil)
  '(ecb-options-version "2.32")
  '(ecb-other-window-behavior (quote edit-and-compile))
