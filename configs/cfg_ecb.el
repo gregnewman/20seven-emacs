@@ -16,11 +16,10 @@
  '(ecb-other-window-jump-behavior (quote edit-and-compile))
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
  '(ecb-select-edit-window-on-redraw t)
- '(ecb-source-path (quote ("~/Projects")))
+ '(ecb-source-path (quote ("~/Documents")))
  '(ecb-tip-of-the-day nil)
  '(ecb-tree-buffer-style (quote image))
- '(ecb-tree-image-icons-directories (quote ("~/.emacs.d/ecb/ecb-images/default/height-17" (ecb-directories-buffer-name . "~/.emacs.d/ecb/ecb-images/directories/height-17") (ecb-sources-buffer-name . "~/.emacs.d/ecb/ecb-images/sources/height-14_to_21") (ecb-methods-buffer-name . "~/.emacs.d/ecb/ecb-images/methods/height-14_to_21"))))
- '(ecb-wget-setup (quote cons)))
+ '(ecb-tree-image-icons-directories (quote ("~/.emacs.d/ecb/ecb-images/default/height-17" (ecb-directories-buffer-name . "~/.emacs.d/ecb/ecb-images/directories/height-17") (ecb-sources-buffer-name . "~/.emacs.d/ecb/ecb-images/sources/height-14_to_21") (ecb-methods-buffer-name . "~/.emacs.d/ecb/ecb-images/methods/height-14_to_21")))))
 
 (require 'ecb)
 ;; Fire up ECB
