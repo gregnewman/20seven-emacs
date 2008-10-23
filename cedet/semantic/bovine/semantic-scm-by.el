@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2001, 2003 Eric M. Ludlam
 
-;; Author: greg newman <greg@greg-4.local>
-;; Created: 2008-10-17 04:39:47-0400
+;; Author: greg newman <greg@greg-newmans-macbook-pro.local>
+;; Created: 2008-10-22 14:40:09-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

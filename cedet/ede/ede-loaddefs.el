@@ -7,7 +7,7 @@
 ;;;;;;  ede-documentation-files ede-description ede-name project-make-dist
 ;;;;;;  project-compile-target project-compile-project project-edit-file-target
 ;;;;;;  ede-compile-target ede-remove-file ede-project ede-target
-;;;;;;  ede-project-autoload) "ede" "ede.el" (18388 7346))
+;;;;;;  ede-project-autoload) "ede" "ede.el" (18687 23345))
 ;;; Generated autoloads from ede.el
 
 (autoload (quote ede-project-autoload) "ede" "\
@@ -106,7 +106,7 @@ could become slow in time.
 ;;;***
 
 ;;;### (autoloads (ede-pmake-varname) "ede-pmake" "ede-pmake.el"
-;;;;;;  (18388 7346))
+;;;;;;  (18687 23345))
 ;;; Generated autoloads from ede-pmake.el
 
 (autoload (quote ede-pmake-varname) "ede-pmake" "\
@@ -116,7 +116,7 @@ Convert OBJ into a variable name name, which converts .  to _.
 
 ;;;***
 
-;;;### (autoloads nil "ede-proj" "ede-proj.el" (18388 7346))
+;;;### (autoloads nil "ede-proj" "ede-proj.el" (18687 23345))
 ;;; Generated autoloads from ede-proj.el
 
 (add-to-list (quote auto-mode-alist) (quote ("Project\\.ede" . emacs-lisp-mode)))
@@ -124,7 +124,7 @@ Convert OBJ into a variable name name, which converts .  to _.
 ;;;***
 
 ;;;### (autoloads (ede-simple-project ede-simple-load ede-simple-projectfile-for-dir)
-;;;;;;  "ede-simple" "ede-simple.el" (18388 7346))
+;;;;;;  "ede-simple" "ede-simple.el" (18687 23345))
 ;;; Generated autoloads from ede-simple.el
 
 (add-to-list (quote ede-project-class-files) (ede-project-autoload "simple-overlay" :name "Simple" :file (quote ede-simple) :proj-file (quote ede-simple-projectfile-for-dir) :load-type (quote ede-simple-load) :class-sym (quote ede-simple-project)) t)
@@ -150,8 +150,8 @@ Each directory needs a a project file to control it.
 
 ;;;***
 
-;;;### (autoloads (ede-update-version) "ede-util" "ede-util.el" (18388
-;;;;;;  7346))
+;;;### (autoloads (ede-update-version) "ede-util" "ede-util.el" (18687
+;;;;;;  23345))
 ;;; Generated autoloads from ede-util.el
 
 (autoload (quote ede-update-version) "ede-util" "\
@@ -168,7 +168,7 @@ Argument NEWVERSION is the version number to use in the current project.
 ;;;;;;  "ede-proj-info.el" "ede-proj-misc.el" "ede-proj-obj.el" "ede-proj-prog.el"
 ;;;;;;  "ede-proj-scheme.el" "ede-proj-shared.el" "ede-proj-skel.el"
 ;;;;;;  "ede-source.el" "ede-speedbar.el" "ede-system.el" "project-am.el")
-;;;;;;  (18682 9482 910446))
+;;;;;;  (18687 29560 357589))
 
 ;;;***
 

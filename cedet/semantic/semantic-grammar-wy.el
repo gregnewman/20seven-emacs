@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004 David Ponce
 
-;; Author: greg newman <greg@greg-4.local>
-;; Created: 2008-10-17 04:39:30-0400
+;; Author: greg newman <greg@greg-newmans-macbook-pro.local>
+;; Created: 2008-10-22 14:39:56-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

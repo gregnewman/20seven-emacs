@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (cedet-update-autoloads) "cedet-autogen" "cedet-autogen.el"
-;;;;;;  (18388 7346))
+;;;;;;  (18687 23345))
 ;;; Generated autoloads from cedet-autogen.el
 
 (autoload (quote cedet-update-autoloads) "cedet-autogen" "\
@@ -20,7 +20,7 @@ exists.
 
 ;;;***
 
-;;;### (autoloads nil "cedet-edebug" "cedet-edebug.el" (18388 7346))
+;;;### (autoloads nil "cedet-edebug" "cedet-edebug.el" (18687 23345))
 ;;; Generated autoloads from cedet-edebug.el
 
 (add-hook (quote edebug-setup-hook) (lambda nil (require (quote cedet-edebug)) (defalias (quote edebug-prin1-to-string) (quote cedet-edebug-prin1-to-string)) (define-key edebug-mode-map "A" (quote semantic-adebug-edebug-expr))))
@@ -29,7 +29,7 @@ exists.
 
 ;;;***
 
-;;;### (autoloads (define-fame-channel) "fame" "fame.el" (18388 7346))
+;;;### (autoloads (define-fame-channel) "fame" "fame.el" (18687 23345))
 ;;; Generated autoloads from fame.el
 
 (autoload (quote define-fame-channel) "fame" "\
@@ -52,7 +52,7 @@ messages to CHANNEL.
 
 ;;;### (autoloads (inversion-upgrade-package inversion-add-to-load-path
 ;;;;;;  inversion-find-version inversion-require) "inversion" "inversion.el"
-;;;;;;  (18388 7346))
+;;;;;;  (18687 23345))
 ;;; Generated autoloads from inversion.el
 
 (autoload (quote inversion-require) "inversion" "\
@@ -98,7 +98,7 @@ Try to upgrade PACKAGE in DIRECTORY is available.
 ;;;***
 
 ;;;### (autoloads (pprint-function pprint pprint-to-string) "pprint"
-;;;;;;  "pprint.el" (18388 7346))
+;;;;;;  "pprint.el" (18687 23345))
 ;;; Generated autoloads from pprint.el
 
 (autoload (quote pprint-to-string) "pprint" "\
@@ -129,7 +129,7 @@ See a pretty-printed representation of FUNCTION-NAME.
 
 ;;;### (autoloads nil nil ("cedet-compat.el" "cedet-files.el" "cedet-load.el"
 ;;;;;;  "cedet.el" "ezimage.el" "mode-local.el" "sformat.el" "working.el")
-;;;;;;  (18682 9481 855014))
+;;;;;;  (18687 29559 569638))
 
 ;;;***
 

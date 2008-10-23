@@ -3,7 +3,7 @@
 ;;; Code:
 
 
-;;;### (autoloads (call-tree) "call-tree" "call-tree.el" (18388 7346))
+;;;### (autoloads (call-tree) "call-tree" "call-tree.el" (18687 23345))
 ;;; Generated autoloads from call-tree.el
 
 (autoload (quote call-tree) "call-tree" "\
@@ -14,7 +14,7 @@ Build a call tree to show all functions called by FUNC.
 ;;;***
 
 ;;;### (autoloads (eieio-describe-generic eieio-describe-class eieio-browse)
-;;;;;;  "eieio-opt" "eieio-opt.el" (18388 7346))
+;;;;;;  "eieio-opt" "eieio-opt.el" (18687 23345))
 ;;; Generated autoloads from eieio-opt.el
 
 (autoload (quote eieio-browse) "eieio-opt" "\
@@ -47,7 +47,7 @@ Also extracts information about all methods specific to this generic.
 ;;;***
 
 ;;;### (autoloads (enable-visual-studio-bookmarks) "linemark" "linemark.el"
-;;;;;;  (18388 7346))
+;;;;;;  (18687 23345))
 ;;; Generated autoloads from linemark.el
 
 (autoload (quote enable-visual-studio-bookmarks) "linemark" "\
@@ -63,7 +63,7 @@ Bind the viss bookmark functions to F2 related keys.
 ;;;***
 
 ;;;### (autoloads (lmcompile-do-highlight) "lmcompile" "lmcompile.el"
-;;;;;;  (18388 7346))
+;;;;;;  (18687 23345))
 ;;; Generated autoloads from lmcompile.el
 
 (autoload (quote lmcompile-do-highlight) "lmcompile" "\
@@ -75,7 +75,7 @@ Works on grep, compile, or other type mode.
 ;;;***
 
 ;;;### (autoloads (directory-tree-thing eieio-class-tree tree-test-it-all)
-;;;;;;  "tree" "tree.el" (18388 7346))
+;;;;;;  "tree" "tree.el" (18687 23345))
 ;;; Generated autoloads from tree.el
 
 (autoload (quote tree-test-it-all) "tree" "\
@@ -100,7 +100,7 @@ Argument PPATH is the path to the directory we are going to analyze.
 ;;;### (autoloads nil nil ("chart.el" "eieio-base.el" "eieio-comp.el"
 ;;;;;;  "eieio-custom.el" "eieio-doc.el" "eieio-load.el" "eieio-speedbar.el"
 ;;;;;;  "eieio-test-methodinvoke.el" "eieio-tests.el" "eieio.el")
-;;;;;;  (18682 9485 932319))
+;;;;;;  (18687 29562 670759))
 
 ;;;***
 

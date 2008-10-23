@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004, 2007 Richard Kim
 
-;; Author: greg newman <greg@greg-4.local>
-;; Created: 2008-10-17 04:39:44-0400
+;; Author: greg newman <greg@greg-newmans-macbook-pro.local>
+;; Created: 2008-10-22 14:40:07-0400
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
