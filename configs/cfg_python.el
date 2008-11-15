@@ -36,4 +36,7 @@
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
 
+(require 'django-html-mode)
+(require 'django-mode)
+
 
