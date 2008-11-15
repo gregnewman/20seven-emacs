@@ -1,12 +1,9 @@
 (setq load-path (cons "~/.emacs.d" load-path))
-(setq load-path (cons "~/.emacs.d/cedet/common" load-path))
 (setq load-path (cons "~/.emacs.d/yasnippet" load-path))
 (setq load-path (cons "~/.emacs.d/Pymacs" load-path))
-(setq load-path (cons "~/.emacs.d/cedet/semantic" load-path))
-(setq load-path (cons "~/.emacs.d/cedet/eieio" load-path))
-(setq load-path (cons "~/.emacs.d/cedet/ede" load-path))
-(setq load-path (cons "~/.emacs.d/cedet/speedbar" load-path))
-(setq load-path (cons "~/.emacs.d/ecb" load-path))
+(setq load-path (cons "~/.emacs.d/elscreen" load-path))
+(setq load-path (cons "~/.emacs.d/dired" load-path))
+(setq load-path (cons "~/.emacs.d/anything" load-path))
 (setq load-path (cons "~/.emacs.d/mmm-mode" load-path))
 (setq load-path (cons "~/.emacs.d/color-theme" load-path))
 (setq load-path (cons "/Applications/Emacs.app/Contents/Resources/site-lisp" load-path))
@@ -29,20 +26,7 @@
                   "cfg_python"
                   "cfg_theme"
                   "cfg_ido"
-                  "cfg_cedet"
-;                  "cfg_ecb"
+                  "cfg_anything"
+                  "cfg_elscreen"
                   "cfg_git"
-;                  "cfg_keybindings"
-;                  "cfg_css-mode"
-;                  "cfg_javascript"
                   "cfg_highlight_line"))
-
-
-
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "#1e1e27" :foreground "#cfbfad" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight semi-light :height 140 :width normal :family "apple-inconsolata-medium"))))
- '(highlight-current-line-face ((t (:background "black")))))

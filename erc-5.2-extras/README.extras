@@ -1,0 +1,31 @@
+
+This is the README file for the ERC extras.
+
+ERC is a powerful, modular, and extensible IRC client for Emacs.
+
+About
+-----
+
+The files included here are those which could not be distributed with
+the version of ERC that comes with Emacs 22.  The reasons might include:
+
+ - No copyright disclaimer was completed for an author of the file.
+ - Depends on files which are not distibuted with Emacs.
+
+Installation
+------------
+
+There are several ways to tell Emacs where to find these files.  The
+easiest may perhaps be to copy them to "~/elisp/erc-extras", and then
+to add the line
+
+  (add-to-list 'load-path "~/elisp/erc-extras" t)
+
+to your ~/.emacs (or ~/.emacs/init.el) file.  Compiling them would be
+overkill.
+
+License information
+-------------------
+
+These extras for ERC are available under the terms of the GNU General
+Public License.  See the file `COPYING' for details.
