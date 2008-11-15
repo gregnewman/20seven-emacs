@@ -28,5 +28,6 @@
                   "cfg_ido"
                   "cfg_anything"
                   "cfg_elscreen"
+                  "cfg_dired"
                   "cfg_git"
                   "cfg_highlight_line"))
