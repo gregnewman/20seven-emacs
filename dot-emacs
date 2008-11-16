@@ -21,13 +21,11 @@
 (load-cfg-files '("cfg_main"
                   "cfg_yasnippet"
                   "cfg_browse_kill_ring"
-                  "cfg_linum"
                   "cfg_mmm_mode"
                   "cfg_python"
                   "cfg_theme"
                   "cfg_ido"
                   "cfg_anything"
-                  "cfg_elscreen"
                   "cfg_dired"
                   "cfg_git"
                   "cfg_highlight_line"))
