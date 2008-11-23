@@ -1,0 +1,129 @@
+;; -*- mode: emacs-lisp -*-
+;; History entries used for anything adaptive display.
+(setq anything-c-adaptive-history (quote (("Google Suggest" ("django pony" ("django pony" . 1)) ("camp rock                     " ("cam" . 2))) ("Yasnippet" ("class ${1:ClassName}(${2:object}):
+    \"\"\"$3
+    \"\"\"
+
+    def __init__(self, $4):
+        \"\"\"$5
+        ${4:$
+        (let* ((indent
+                (concat \"\\n\" (make-string (current-column) 32)))
+               (args
+                (mapconcat
+                 '(lambda (x)
+                    (if (not (string= (nth 0 x) \"\"))
+                        (concat \"- \" (char-to-string 96) (nth 0 x)
+                                (char-to-string 96) \":\")))
+                 (mapcar
+                  '(lambda (x)
+                     (mapcar
+                      (lambda (x)
+                        (replace-regexp-in-string \"[[:blank:]]*$\" \"\"
+                         (replace-regexp-in-string \"^[[:blank:]]*\" \"\" x))) x))
+                  (mapcar '(lambda (x) (split-string x \"=\"))
+                          (split-string text \",\")))
+                 indent)))
+          (if (string= args \"\")
+              (make-string 3 34)
+            (mapconcat
+             'identity
+             (list \"\" \"Arguments:\" args (make-string 3 34))
+             indent)))
+        }
+        ${4:$
+        (mapconcat
+         '(lambda (x)
+            (if (not (string= (nth 0 x) \"\"))
+                (concat \"self._\" (nth 0 x) \" = \" (nth 0 x))))
+         (mapcar
+          '(lambda (x)
+             (mapcar
+              '(lambda (x)
+                 (replace-regexp-in-string \"[[:blank:]]*$\" \"\"
+                  (replace-regexp-in-string \"^[[:blank:]]*\" \"\" x)))
+              x))
+          (mapcar '(lambda (x) (split-string x \"=\"))
+                  (split-string text \",\")))
+         (concat \"\\n\" (make-string (current-column) 32)))
+        }
+        $0
+" ("" . 1))) (nil ("/Users/greg/development/cam/core/forms.py" ("cam" . 1)) ("~/development/cam/apps/communicate/urls.py" ("cam" . 1)) ("/Users/greg/development/cam/manage.py" ("cam" . 6)) ("/Users/greg/development/cam/deploy/cam.wsgi" ("cam" . 2)) ("/Users/greg/development/cam/apps/newsletter/views.py" ("cam" . 1)) ("~/development/cam/manage.py" ("cam" . 2)) ("/development/python/scofield-project/scofield/product/urls.py" ("scofield" . 2)) ("~/Downloads/sequence_data.sql" ("cam" . 1))) ("Info Pages" ("ERC: (erc)" ("erc" . 1))) (command ("anything-c-yas-complete" ("yas-c" . 1)) ("anything-c-yas-create-snippet-on-regin" ("yas-c" . 6)) ("erc" ("erc" . 1)) ("anything-isearch" ("anythi" . 1))) ("/development/python/oebfare/apps/blog/" ("/development/python/oebfare/apps/blog/templatetags" ("" . 1))) ("Manual Pages" ("mdfind" ("mdfind" . 1)) ("dirname" ("dirname" . 1))) (file ("views.py" ("v" . 1) ("views" . 1)) ("forms.py" ("for" . 1)) ("password_reset_done.html" ("" . 1)) ("/Users/greg/development/cam" ("development/cam" . 1)) ("/Users/greg/development/cam/templates/product" ("/cam/templates/prod" . 1)) ("flag_form.html" ("" . 1)) ("col" ("col" . 1)) ("~/development/cam/media/static/images/nav/col_va.jpg" ("/cam/" . 1)) ("admin.py" ("" . 1)) ("urls.py" ("" . 1)) ("/Users/greg/development/cam/apps/clippings" ("cam/" . 1)) ("/Users/greg/anything.el.txt" ("anything.el" . 1)) ("/Users/greg/.emacs.d/anything-config.el" ("anything-config" . 2)) ("/development/python/scofield_testbed/settings.py" ("scofield.manufacturer" . 1)) ("/Users/greg/development/cam/scofield/product/models.py" ("__unicode__" . 1)) ("/development/python/scofield-project/scofield/product/models.py" ("get_absolute_url" . 1) ("scofield.man" . 1)) ("/development/python/oebfare/apps/blog/models.py" ("oebfare" . 1)) ("/development/python/oebfare/apps/aggregator/models.py" ("oebfare" . 2)) ("/Users/greg/development/cam/apps/cms" ("cam/" . 1)) ("/Users/greg/development/cam/scofield" ("scofield" . 3)) ("/Applications/Adobe Photoshop CS3/Presets/Web Photo Gallery/Horizontal Neutral/images/camicon02.gif" ("cam" . 1)) ("/Users/greg/Library/Caches/Metadata/Safari/History/http:%2F%2Flocalhost:8000%2Fcollections%2Fcategory%2Fproducts%2Fsoft-furnishings%2Fproduct%2Fbig-cushions.webhistory" ("cam" . 1)) ("~/development/cam/manage.py" ("cam" . 1)) ("/Users/greg/RubikitchAnythingConfiguration.txt" ("anything-occur" . 1)) ("/Library/Python/2.5/site-packages/scofield" ("scofield" . 1)) ("/Users/greg/development/camwebsite" ("/development/cam" . 1) ("camw" . 1) ("camwebsite" . 1)) ("/development/python/sequencemed/projects/sequence/apps/dtd/urls.py" ("dtd" . 1)) ("/development/python/sequencemed/projects/sequence/urls.py" ("dtd" . 1)) ("/development/python/sequencemed/projects/sequence/templates/dtd/members.html" ("dtd" . 1)) ("/development/python/sequencemed/projects/sequence/apps/dtd/views.py" ("dtd" . 1)) ("/Users/greg/development/cam/cam.db" ("cam" . 2)) ("/Users/greg/development/camwebsite/media/static/js/wymeditor/jquery.wymeditor.js" ("datetime" . 1)) ("/Users/greg/Library/Mail/IMAP-greg@20seven.org@mail.20seven.org/INBOX.imapmbox/Messages/18593.emlx" ("kevin" . 1)) ("/development/python/scofield-project/scofield/cart/views.py" ("scofield-project" . 1)) ("/development/python/oebfare" ("oebfare" . 3)) ("/development/python/oebfare/apps/blog/feeds.py" ("oebfare" . 1)) ("/Users/greg/.emacs.d/configs/cfg_browse_kill_ring.el" ("cfg_" . 1)) ("/Users/greg/.emacs.d/dot-emacs" ("dot-emacs" . 1)) ("/Users/greg/.emacs.d/anything.el" ("anything.el" . 1)) ("/Users/greg/.emacs.d/configs/cfg_main.el" ("cfg_main" . 1)) ("/development/python/scofield-project/scofield/account" ("scofield-project" . 1)) ("/development/python/scofield-project/scofield/account/urls.py" ("scofield-project" . 1)) ("/development/python/scofield-project" ("scofield-project" . 2)) ("/development/python/scofield-norwall" ("scofield" . 1))) (buffer ("list.html/category" ("" . 8) ("l" . 1)) ("scofield" ("" . 12)) ("cam" ("" . 48) ("c" . 1)) ("_collections_nav.html" ("" . 3) ("_" . 1)) ("views.py/wishlist" ("" . 6)) ("templates" ("" . 23) ("t" . 1) ("te" . 2)) ("password_reset_message.txt" ("" . 2)) ("forms.py/account" ("" . 26) ("f" . 3)) ("account/templates" ("" . 8)) ("password_reset.html" ("" . 1)) ("password_change.html" ("" . 1)) ("quote_request_email.html" ("" . 4)) ("views.py/quote" ("" . 48) ("q" . 1) ("v" . 1)) ("forms.py/quote" ("f" . 2) ("" . 42)) ("
+Google Suggest
+Search for 'scr' on Google
+screwfix                     
+scrubs                       
+scrabble                     
+screensavers                 
+scream                       
+scrapbooking                 
+scrabble dictionary          
+scribd                       
+scroll box                   
+scroll boxes                 
+*scratch*" ("scr" . 2) ("" . 4)) ("details.html" ("" . 24) ("de" . 4) ("d" . 3)) ("views.py/product" ("" . 12) ("v" . 1)) ("views.py/category" ("" . 1)) ("categorytree.py" ("" . 11)) ("models.py/category" ("" . 5)) ("satchmo_category.py" ("" . 7)) ("templatetags/category" ("" . 1)) ("category/scofield" ("" . 4)) ("category" ("" . 2)) ("list.html/picks" ("" . 6) ("li" . 1)) ("page.html" ("" . 3)) ("base.html" ("" . 6)) ("models.py/product" ("" . 3) ("m" . 1)) ("style.css" ("" . 4)) ("list.html" ("" . 3)) ("list.html/quotes" ("" . 12) ("li" . 1)) ("models.py/quote" ("" . 12)) ("proforma.html" ("" . 12)) ("quotation.html" ("" . 3)) ("currency.py" ("" . 1)) ("views.py" ("" . 11)) ("quote" ("" . 8)) ("models.py" ("m" . 1) ("" . 5)) ("request.html" ("re" . 1) ("" . 15)) ("forms.py/zwitschern" ("f" . 1)) ("forms.py" ("" . 7) ("f" . 1)) ("quotes" ("" . 2)) ("views.py/customer" ("" . 1)) ("forms.py/account/scofield" ("" . 7)) ("admin.py/quote" ("" . 3)) ("admin.py/account" ("" . 2)) ("account/scofield" ("" . 4)) ("search_results.html" ("" . 1)) ("product/templates" ("" . 7)) ("local_settings.py" ("" . 1)) ("forms.py/account/norwall" ("" . 3)) ("views.py/account/norwall" ("" . 2)) ("*scratch*" ("sc" . 3)) (nil ("scr" . 1) ("deta" . 1)) ("signup.html" ("" . 8) ("si" . 1)) ("forms.py/newsletter" ("" . 10) ("f" . 2)) ("forms.py/customer" ("" . 14) ("f" . 1)) ("views.py/account" ("" . 5) ("v" . 2)) ("quote_items.html" ("" . 18)) ("
+Google Suggest
+Search for 'form' on Google
+formula 1                     
+formal dresses                
+formica                       
+formaldehyde                  
+formula                       
+formal hairstyles             
+formal letter                 
+format                        
+format hard drive             
+formal letter format          
+forms.py/account" ("form" . 1)) ("urls.py/quote" ("" . 4)) ("newsletter" ("" . 1)) ("models.py/customer" ("" . 2)) ("profile.html" ("" . 4)) ("models.py/newsletter" ("" . 2)) ("customer" ("" . 1)) ("profile" ("" . 1)) ("collections.html" ("" . 2)) ("products.html" ("" . 3)) ("urls.py" ("" . 3)) ("wishlist" ("" . 1)) ("settings.py" ("" . 2)) ("product/scofield" ("" . 3)) ("product" ("" . 1)) ("account" ("" . 1)) ("views.py/profiles" ("" . 1)) ("category/templates" ("" . 2)) ("
+Google Suggest
+Search for 'view' on Google
+viewsonic                       
+viewmymessage.com               
+viewsat                         
+view london                     
+viewit.ca                       
+viewtrip                        
+viewpoint                       
+viewpoint media player          
+viewty                          
+viewpoint bank                  
+views.py/wishlist" ("view" . 1)) ("
+Google Suggest
+Search for 'det' on Google
+detroit free press           
+detroit news                 
+detroit lions                
+det portal                   
+detroit red wings            
+detroit                      
+detox                        
+detroit pistons              
+dethklok                     
+detik                        
+details.html" ("det" . 1)) ("views.py/flag" ("" . 2)) ("flag_form.html" ("" . 1)) ("
+Google Suggest
+Search for 'coll' on Google
+college board                      
+college football rankings          
+college football                   
+college                            
+college football scores            
+college humor                      
+collage                            
+college rankings                   
+college football schedule          
+college of charleston              
+collections.html" ("coll" . 1)) ("
+Google Suggest
+Search for 'detail' on Google
+details magazine                      
+details in the fabric lyrics          
+detailing world                       
+detailing                             
+detailed                              
+detail oriented                       
+detailed world map                    
+detailed periodic table               
+detailsview                           
+detailed map of europe                
+details.html" ("detail" . 1)) ("thickbox.js" ("" . 1)) ("*Messages*" ("" . 1)) ("cfg_anything.el" ("" . 1)) ("18593.emlx" ("" . 1)) ("anything-c-source-mac-spotlight" ("" . 1) ("anything-c-source-mac-spotlight" . 1)) (" *function symbols*" ("" . 1)) ("*Completions*" ("" . 1)) ("anything.el" ("" . 1)) ("dot-emacs" ("" . 1)) ("cfg_main.el" ("" . 1)) ("pinax" ("pinax" . 1)) ("test" ("test" . 1)) ("python" ("python" . 1)) ("scofield-project" ("scofield-project" . 1))))))

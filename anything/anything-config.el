@@ -1062,9 +1062,12 @@ This function allows easy sequencing of transformer functions."
       (list anything-c-source-buffers
             anything-c-source-buffer-not-found
             anything-c-source-file-name-history
+            anything-c-source-files-in-current-dir
             anything-c-source-info-pages
             anything-c-source-man-pages
             anything-c-source-locate
+            anything-c-source-mac-spotlight
+            anything-c-source-google-suggest
             anything-c-source-emacs-commands))
 
 ;;;; Type Attributes

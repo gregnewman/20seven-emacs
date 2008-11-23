@@ -10,6 +10,35 @@
 ;; This file is delimited by linkd tags.
 ;; http://www.emacswiki.org/cgi-bin/wiki/download/linkd.el
 
+;; The definition of with-new-window is here. It depends on windows.el.
+;; (@* "with-new-window definition")
+;(unless (fboundp 'with-new-window)
+  ;; (install-elisp "http://www.gentei.org/~yuuji/software/windows.el")
+;  (require 'windows)
+;  (defun win:insert-config (idx)
+;    (let (i (vector win:configs))
+;      (setq i 1)
+;      (while (and (< i (1- (length vector)))
+;                  (aref vector i))
+;        (setq i (1+ i)))
+;      (assert (eq (aref vector i) nil))
+;      (while (< idx i)
+;        (win:copy-config  (- i 1) i)
+;        (setq i (1- i)))
+;      (aset win:configs idx nil)
+;      (aset win:names idx nil)
+;      (aset win:names-prefix idx "")
+;      (aset win:sizes idx nil)
+;      (aset win:buflists idx (make-vector win:buffer-depth-per-win nil))
+;      (aset win:points idx nil)))
+;  (defmacro with-new-window (&rest body)
+;    `(let ((i (win:find-new-window)))
+;       (win:store-config win:current-config)
+;       (win:insert-config i)
+;       (win:switch-window i nil t)
+;       (delete-other-windows)
+;       ,@body
+;       (win:store-config i))))
 
 
 ;; [2007/07/25]
@@ -669,7 +698,7 @@
 
 ;; [2008/01/07] (@* " imenu (improved)")
 ;; (install-elisp "http://www4.atpages.jp/loveloveelisp/anything-c-imenu.el")
-;(require 'anything-c-imenu)
+(require 'anything-c-imenu)
 ;; (anything 'anything-c-source-imenu)
 
 ;; [2007/12/31] (@* " rake-task")

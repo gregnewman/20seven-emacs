@@ -32,9 +32,12 @@
 ;(pymacs-load "pastemacs" "paste-")
 ;(paste-menu)
 
+(require 'pysmell)
+(add-hook 'python-mode-hook (lambda () (pysmell-mode 1)))
 
-(pymacs-load "ropemacs" "rope-")
-(setq ropemacs-enable-autoimport t)
+
+;(pymacs-load "ropemacs" "rope-")
+;(setq ropemacs-enable-autoimport t)
 
 (load-file "~/.emacs.d/django-html-mode.el")
 (load-file "~/.emacs.d/django-mode.el")
