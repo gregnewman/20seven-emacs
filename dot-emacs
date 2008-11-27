@@ -1,5 +1,6 @@
 (setq load-path (cons "~/.emacs.d" load-path))
 (setq load-path (cons "~/.emacs.d/vendor" load-path))
+(setq load-path (cons "~/.emacs.d/vendor/textmate.el" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/yasnippet" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/Pymacs" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/elscreen" load-path))
