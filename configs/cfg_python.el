@@ -39,8 +39,8 @@
 ;(pymacs-load "ropemacs" "rope-")
 ;(setq ropemacs-enable-autoimport t)
 
-(load-file "~/.emacs.d/django-html-mode.el")
-(load-file "~/.emacs.d/django-mode.el")
+(load-file "~/.emacs.d/vendor/django-html-mode.el")
+(load-file "~/.emacs.d/vendor/django-mode.el")
 
 
 

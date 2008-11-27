@@ -1,88 +1,0 @@
-8
-
-dir
-304
-http://yasnippet.googlecode.com/svn/trunk/snippets/text-mode
-http://yasnippet.googlecode.com/svn
-
-
-
-2008-09-10T12:01:23.760228Z
-292
-pluskid
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-b2103351-7347-0410-aa0e-656c9fbaa8cf
-
-objc-mode
-dir
-
-f90-mode
-dir
-
-sql-mode
-dir
-
-python-mode
-dir
-
-ruby-mode
-dir
-
-perl-mode
-dir
-
-markdown-mode
-dir
-
-html-mode
-dir
-
-cc-mode
-dir
-
-email
-file
-
-
-
-
-2008-10-19T13:53:01.000000Z
-fa9ae2839be3e6d9b17a93f74da07504
-2008-03-10T12:26:15.728182Z
-126
-pluskid
-
-css-mode
-dir
-
-rst-mode
-dir
-
-erlang-mode
-dir
-
-time
-file
-
-
-
-
-2008-10-19T13:53:01.000000Z
-f0b9d06664e171627d8c87ea7a26b7c6
-2008-03-10T12:26:15.728182Z
-126
-pluskid
-
