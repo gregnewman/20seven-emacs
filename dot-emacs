@@ -1,12 +1,11 @@
 (setq load-path (cons "~/.emacs.d" load-path))
 (setq load-path (cons "~/.emacs.d/vendor" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/textmate.el" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/yasnippet" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/Pymacs" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/elscreen" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/dired" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/anything" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/mmm-mode" load-path))
+;(setq load-path (cons "~/.emacs.d/vendor/mmm-mode" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/color-theme" load-path))
 (setq load-path (cons "/Applications/Emacs.app/Contents/Resources/site-lisp" load-path))
 (setq load-path (cons "/Applications/Emacs.app/Contents/Resources/lisp" load-path))
@@ -23,7 +22,7 @@
 (load-cfg-files '("cfg_main"
                   "cfg_yasnippet"
                   "cfg_browse_kill_ring"
-                  "cfg_mmm_mode"
+                  ;"cfg_mmm_mode"
                   "cfg_python"
                   "cfg_theme"
                   "cfg_ido"

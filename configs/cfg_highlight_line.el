@@ -4,11 +4,11 @@
  '(highlight-current-line-globally t nil (highlight-current-line)))
  
 (custom-set-faces
- '(highlight-current-line-face ((t (:background "#e6e6e6")))))
+ '(highlight-current-line-face ((t (:background "#000000")))))
  
                                         ; good: 4f2f42
                                         ; midnight blue
                                         ; saddle brown
 (cond (window-system
        (custom-set-faces
-        '(highlight-current-line-face ((t (:background "#e6e6e6")))))))
+        '(highlight-current-line-face ((t (:background "#000000")))))))
