@@ -1,4 +1,4 @@
 .DS_Store
 auto-save-list/
 *.cache
-*.el~
+*.el~/anything-c-adaptive-history
