@@ -4,4 +4,6 @@
 
 ;(color-theme-blippblopp)
 ;(color-theme-inkpot)
-(color-theme-montz)
+(load-file "~/.emacs.d/vendor/color-theme/color-theme-tango-2.el")
+(color-theme-tango-2)
+;(color-theme-montz)
