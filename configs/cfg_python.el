@@ -28,9 +28,7 @@
 (autoload 'pymacs-eval "pymacs" nil t)
 (autoload 'pymacs-exec "pymacs" nil t)
 (autoload 'pymacs-load "pymacs" nil t)
-; easy pasting to paste.pocoo.org
-;(pymacs-load "pastemacs" "paste-")
-;(paste-menu)
+
 
 (require 'pysmell)
 (add-hook 'python-mode-hook (lambda () (pysmell-mode 1)))
