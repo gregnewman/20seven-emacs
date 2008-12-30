@@ -7,3 +7,6 @@
 [submodule "vendor/textmate"]
 	path = vendor/textmate
 	url = git://github.com/defunkt/textmate.el.git
+[submodule "vendor/egg"]
+	path = vendor/egg
+	url = git@github.com:gregnewman/egg.git
