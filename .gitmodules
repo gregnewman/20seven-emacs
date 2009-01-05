@@ -10,3 +10,6 @@
 [submodule "vendor/egg"]
 	path = vendor/egg
 	url = git@github.com:gregnewman/egg.git
+[submodule "vendor/color-theme/twilight-emacs"]
+	path = vendor/color-theme/twilight-emacs
+	url = git://github.com/crafterm/twilight-emacs.git
