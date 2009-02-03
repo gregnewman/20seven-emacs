@@ -24,33 +24,11 @@
 
 (eval-and-compile
 
-  (cond ((fboundp 'multibyte-string-p)
-         (defalias 'pymacs-multibyte-string-p 'multibyte-string-p))
-        ((fboundp 'find-charset-string)
-         (defun pymacs-multibyte-string-p (string)
-           "Tell XEmacs if STRING should be handled as multibyte."
-           (not (member (find-charset-string string) '(nil (ascii))))))
-        (t
-         (defun pymacs-multibyte-string-p (string)
-           "Tell XEmacs that STRING is unibyte, because Mule is not around!"
-           nil)))
-
-  (cond ((fboundp 'set-process-query-on-exit-flag)
-         (defun pymacs-kill-without-query (process)
-           "Tell recent Emacs how to quickly destroy PROCESS while exiting."
-           (set-process-query-on-exit-flag process nil)))
-        ((fboundp 'process-kill-without-query-process)
-         (defalias 'pymacs-kill-without-query 'process-kill-without-query))
-        (t
-         (defun pymacs-kill-without-query (process)
-           "Tell nothing when there is no way to speak."
-           nil)))
-
-  (if (fboundp 'set-buffer-multibyte)
-      (defalias 'pymacs-set-buffer-multibyte 'set-buffer-multibyte)
-    (defun pymacs-set-buffer-multibyte (flag)
-      "For use in Emacs 20.2 or earlier.  No-operation under XEmacs."
-      (setq enable-multibyte-characters flag))))
+  (if (fboundp 'multibyte-string-p)
+      (defalias 'pymacs-multibyte-string-p 'multibyte-string-p)
+    (defun pymacs-multibyte-string-p (string)
+      "Tell XEmacs if STRING should be handled as multibyte."
+      (not (equal (find-charset-string string) '(ascii))))))
 
 (defalias 'pymacs-report-error (symbol-function 'error))
 
@@ -495,7 +473,7 @@ The timer is used only if `post-gc-hook' is not available.")
   (let ((buffer (get-buffer-create "*Pymacs*")))
     (with-current-buffer buffer
       (buffer-disable-undo)
-      (pymacs-set-buffer-multibyte nil)
+      (set-buffer-multibyte nil)
       (set-buffer-file-coding-system 'raw-text)
       (save-match-data
         ;; Launch the Pymacs helper.
@@ -509,7 +487,10 @@ The timer is used only if `post-gc-hook' is not available.")
                                    " from Pymacs.pymacs import main;"
                                    " main(*sys.argv[1:])")
                       (mapcar 'expand-file-name pymacs-load-path))))
-          (pymacs-kill-without-query process)
+          (cond ((fboundp 'set-process-query-on-exit-flag)
+                 (set-process-query-on-exit-flag process nil))
+                ((fboundp 'process-kill-without-query-process)
+                 (process-kill-without-query process)))
           ;; Receive the synchronising reply.
           (while (progn
                    (goto-char (point-min))
@@ -531,9 +512,9 @@ The timer is used only if `post-gc-hook' is not available.")
           (if (and (pymacs-proper-list-p reply)
                    (= (length reply) 2)
                    (eq (car reply) 'version))
-              (unless (string-equal (cadr reply) "0.24-beta1")
+              (unless (string-equal (cadr reply) "0.23")
                 (pymacs-report-error
-                 "Pymacs Lisp version is 0.24-beta1, Python is %s"
+                 "Pymacs Lisp version is 0.23, Python is %s"
                  (cadr reply)))
             (pymacs-report-error "Pymacs got an invalid initial reply")))))
     (when pymacs-use-hash-tables

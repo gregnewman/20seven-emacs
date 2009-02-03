@@ -23,10 +23,31 @@
                   "cfg_yasnippet"
                   "cfg_browse_kill_ring"
                   ;"cfg_mmm_mode"
-                  "cfg_python"
+                  ;"cfg_python"
+                  "cfg_ruby"
                   "cfg_theme"
                   "cfg_ido"
                   "cfg_anything"
                   "cfg_dired"
                   "cfg_git"
                   "cfg_highlight_line"))
+
+
+
+;(defconst emacs-vendor-dir "~/.emacs.d/vendor/")  ;; initialize a vendor directry variable
+
+;(defun get-subdirs (directory)
+;  (apply 'nconc (mapcar (lambda (fa)  ;; nconc concats a bunch of lists into a master list. fa stands for file-attribute
+;                        (and 
+;                         (eq (cadr fa) t)  ;; check that the 2nd argument in the list is t (means the item is a directory)
+;                         (not (equal (car fa) "."))  ;; make sure the directory name (first item in list) isn't .
+;                         (not (equal (car fa) "..")) ;; or ..
+;                         (list (car fa)))) ;; now add the name of the directory to a list, which will be appended to nconc's concat functions
+;                        (directory-files-and-attributes directory))))  ;; ls on the specified directory
+
+;(defun add-vendors-to-loadpath ()
+;  (dolist (subdir (get-subdirs emacs-vendor-dir)) ;; loop over items in the list of subdirs retrieved
+;    (setq load-path (cons (cons emacs-vendor-dir subdir) load-path)) ;; add them to load path
+;    (message "Added %s to load path" subdir))) ;; tell me we've loaded them.
+
+;(add-vendors-to-loadpath) ;; execute the function. I think there's a way to make the defun do this automatically, but don't remember
