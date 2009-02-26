@@ -41,4 +41,11 @@
 (load-file "~/.emacs.d/vendor/django-mode.el")
 
 
+(defun my-compile ()
+  "Use compile to run python programs"
+  (interactive)
+  (compile (concat "python " (buffer-name))))
+(setq compilation-scroll-output t)
 
+
+(local-set-key "\C-c\C-c" 'my-compile)
