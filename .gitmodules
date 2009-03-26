@@ -13,3 +13,6 @@
 [submodule "vendor/color-theme/twilight-emacs"]
 	path = vendor/color-theme/twilight-emacs
 	url = git://github.com/crafterm/twilight-emacs.git
+[submodule "vendor/org-mode"]
+	path = vendor/org-mode
+	url = git://repo.or.cz/org-mode.git

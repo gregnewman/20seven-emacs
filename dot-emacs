@@ -1,3 +1,4 @@
+(load-library "iso-transl")
 (setq load-path (cons "~/.emacs.d" load-path))
 (setq load-path (cons "~/.emacs.d/vendor" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/yasnippet" load-path))
@@ -5,10 +6,11 @@
 (setq load-path (cons "~/.emacs.d/vendor/elscreen" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/dired" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/anything" load-path))
-;(setq load-path (cons "~/.emacs.d/vendor/mmm-mode" load-path))
+;;;(setq load-path (cons "~/.emacs.d/vendor/mmm-mode" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/color-theme" load-path))
-(setq load-path (cons "/Applications/Emacs.app/Contents/Resources/site-lisp" load-path))
-(setq load-path (cons "/Applications/Emacs.app/Contents/Resources/lisp" load-path))
+;(setq load-path (cons "/Applications/Emacs.app/Contents/Resources/site-lisp" load-path))
+;(setq load-path (cons "/Applications/Emacs.app/Contents/Resources/lisp" load-path))
+
 
 (defconst emacs-config-dir "~/.emacs.d/configs/" "")
  
@@ -20,10 +22,11 @@
     ))
  
 (load-cfg-files '("cfg_main"
+                  "cfg_org"
                   "cfg_yasnippet"
                   "cfg_browse_kill_ring"
                   ;"cfg_mmm_mode"
-                  ;"cfg_python"
+                  "cfg_python"
                   "cfg_ruby"
                   "cfg_theme"
                   "cfg_ido"
@@ -34,20 +37,16 @@
 
 
 
-;(defconst emacs-vendor-dir "~/.emacs.d/vendor/")  ;; initialize a vendor directry variable
-
-;(defun get-subdirs (directory)
-;  (apply 'nconc (mapcar (lambda (fa)  ;; nconc concats a bunch of lists into a master list. fa stands for file-attribute
-;                        (and 
-;                         (eq (cadr fa) t)  ;; check that the 2nd argument in the list is t (means the item is a directory)
-;                         (not (equal (car fa) "."))  ;; make sure the directory name (first item in list) isn't .
-;                         (not (equal (car fa) "..")) ;; or ..
-;                         (list (car fa)))) ;; now add the name of the directory to a list, which will be appended to nconc's concat functions
-;                        (directory-files-and-attributes directory))))  ;; ls on the specified directory
-
-;(defun add-vendors-to-loadpath ()
-;  (dolist (subdir (get-subdirs emacs-vendor-dir)) ;; loop over items in the list of subdirs retrieved
-;    (setq load-path (cons (cons emacs-vendor-dir subdir) load-path)) ;; add them to load path
-;    (message "Added %s to load path" subdir))) ;; tell me we've loaded them.
-
-;(add-vendors-to-loadpath) ;; execute the function. I think there's a way to make the defun do this automatically, but don't remember
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(highlight-current-line-globally t nil (highlight-current-line))
+ '(org-agenda-files (quote ("~/gtd/greg.org"))))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(highlight-current-line-face ((t (:background "#333333")))))
