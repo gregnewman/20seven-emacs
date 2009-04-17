@@ -141,12 +141,13 @@ START-TIME and END-OF-DAY are the number of minutes past midnight."
    )
 
 (setq org-tag-alist '(("URGENT" . ?u)
-                      ("@PHONE" . ?p)
+                      ("@CALLS" . ?c)
                       ("@ERRANDS" . ?e)
-                      ("CODE" . ?c)
-                      ("DESIGN" . ?d)
-                      ("MAC" . ?m)
-                      ("STUDIO" . ?s)))
+                      ("@MAC" . ?m)
+                      ("@DAILY" . ?.)
+                      ("@ME" . ?p)
+                      ("@JODI" . ?j)
+                      ("@STUDIO" . ?s)))
 
 (setq org-todo-keywords
       '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)" "WAITING(w)")
