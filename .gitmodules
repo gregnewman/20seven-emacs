@@ -22,3 +22,6 @@
 [submodule "vendor/slime"]
 	path = vendor/slime
 	url = git://git.boinkor.net/slime.git
+[submodule "vendor/remember-2.0"]
+	path = vendor/remember-2.0
+	url = git://repo.or.cz/remember-el.git
