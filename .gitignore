@@ -1,7 +1,8 @@
 .DS_Store
 auto-save-list/
 *.cache
-*.el~/anything-c-adaptive-history
+*.el~
+anything-c-adaptive-history
 vendor/nxhtml
 vendor/rinari
 .org-id-locations
