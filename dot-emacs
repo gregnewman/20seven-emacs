@@ -5,6 +5,7 @@
 (setq load-path (cons "~/.emacs.d/vendor/Pymacs" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/elscreen" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/dired" load-path))
+(setq load-path (cons "~/.emacs.d/vendor/smex" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/anything" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/remember-2.0" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/org-mode" load-path))
@@ -78,4 +79,4 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(highlight-current-line-face ((t (:background "#333333")))))
+ '(highlight-current-line-face ((t (:background "#F2F2F2")))))

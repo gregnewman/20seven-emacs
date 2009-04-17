@@ -2,7 +2,7 @@
 (require 'color-theme)
 (color-theme-initialize)
 
-(color-theme-charcoal-black)
+;(color-theme-charcoal-black)
 ;(color-theme-blippblopp)
 ;(color-theme-billw)
 ;(color-theme-inkpot)
@@ -17,3 +17,6 @@
 ;(color-theme-blackboard)
 ;(load-file "~/.emacs.d/vendor/color-theme/color-theme-hober2.el")
 ;(color-theme-hober2)
+
+(load-file "~/.emacs.d/vendor/color-theme/color-theme-github/color-theme-github.el")
+(color-theme-github)
