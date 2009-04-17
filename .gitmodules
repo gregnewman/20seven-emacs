@@ -19,3 +19,6 @@
 [submodule "vendor/color-theme/color-theme-github"]
 	path = vendor/color-theme/color-theme-github
 	url = git://github.com/dudleyf/color-theme-github.git
+[submodule "vendor/slime"]
+	path = vendor/slime
+	url = git://git.boinkor.net/slime.git
