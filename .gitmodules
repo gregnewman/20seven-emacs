@@ -13,3 +13,9 @@
 [submodule "vendor/org-mode"]
 	path = vendor/org-mode
 	url = git://repo.or.cz/org-mode.git
+[submodule "vendor/smex"]
+	path = vendor/smex
+	url = git://github.com/nonsequitur/smex.git
+[submodule "vendor/color-theme/color-theme-github"]
+	path = vendor/color-theme/color-theme-github
+	url = git://github.com/dudleyf/color-theme-github.git
