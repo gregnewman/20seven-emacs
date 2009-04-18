@@ -1,8 +1,8 @@
 ==================================
-20seven Carbon Emacs Configuration
+My Emacs Configuration
 ==================================
 
-This is  my emacs configuration.
+This is my emacs configs which I'm currently running under version 23.0.92.
 
 **Usage**
 
