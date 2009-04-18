@@ -2,8 +2,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Python mode customizations
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (load-file "~/.emacs.d/vendor/python-mode/python-mode.el")
-;(autoload 'python-mode "python-mode" "Python Mode." t)
+(require 'python)
+(autoload 'python-mode "python-mode" "Python Mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 (setq interpreter-mode-alist
@@ -15,8 +17,8 @@
 		    (set-variable 'py-smart-indentation nil)
 		    (set-variable 'indent-tabs-mode nil) 
 		    ;;(highlight-beyond-fill-column)
-                    (define-key python-mode-map "\C-m" 'newline-and-indent)
-		    (pabbrev-mode)
+            (define-key python-mode-map "\C-m" 'newline-and-indent)
+		    ;;(pabbrev-mode)
 		    (abbrev-mode)
 	 )
       )
@@ -49,7 +51,7 @@
 (setq compilation-scroll-output t)
 
 
-(local-set-key "\C-c\C-c" 'my-compile)
+(local-set-key "\C-c\C-p" 'my-compile)
 
 
 (require 'comint)
