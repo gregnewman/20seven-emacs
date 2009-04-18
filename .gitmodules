@@ -25,3 +25,6 @@
 [submodule "vendor/remember-2.0"]
 	path = vendor/remember-2.0
 	url = git://repo.or.cz/remember-el.git
+[submodule "vendor/color-theme/color-theme-merbivore"]
+	path = vendor/color-theme/color-theme-merbivore
+	url = git://github.com/mig/color-theme-merbivore.git

@@ -18,5 +18,8 @@
 ;(load-file "~/.emacs.d/vendor/color-theme/color-theme-hober2.el")
 ;(color-theme-hober2)
 
-(load-file "~/.emacs.d/vendor/color-theme/color-theme-github/color-theme-github.el")
-(color-theme-github)
+;(load-file "~/.emacs.d/vendor/color-theme/color-theme-github/color-theme-github.el")
+;(color-theme-github)
+
+(load-file "~/.emacs.d/vendor/color-theme/color-theme-merbivore/color-theme-merbivore.el")
+(color-theme-merbivore)
