@@ -17,6 +17,7 @@ These configs are used daily for my work to include but not limited to Python/Dj
 **Submodules**
 I try to use as many submodules as I can to keep up to date with development releases. Current submodules are:
 
+::
 vendor/color-theme/color-theme-github (heads/master)
 vendor/color-theme/color-theme-merbivore (heads/master)
 vendor/color-theme/twilight-emacs (heads/master)
