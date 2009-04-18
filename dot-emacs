@@ -6,6 +6,7 @@
 (setq load-path (cons "~/.emacs.d/vendor/elscreen" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/dired" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/smex" load-path))
+(setq load-path (cons "~/.emacs.d/vendor/emacs-grep-o-matic" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/anything" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/remember-2.0" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/org-mode" load-path))

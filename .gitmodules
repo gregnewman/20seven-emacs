@@ -28,3 +28,6 @@
 [submodule "vendor/color-theme/color-theme-merbivore"]
 	path = vendor/color-theme/color-theme-merbivore
 	url = git://github.com/mig/color-theme-merbivore.git
+[submodule "vendor/emacs-grep-o-matic"]
+	path = vendor/emacs-grep-o-matic
+	url = git://github.com/ZungBang/emacs-grep-o-matic.git
