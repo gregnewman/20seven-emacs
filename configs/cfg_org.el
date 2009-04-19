@@ -174,7 +174,7 @@ START-TIME and END-OF-DAY are the number of minutes past midnight."
           (org-agenda-remove-tags t)
           (ps-number-of-columns 1)
            (ps-landscape-mode nil))
-         ("~/gtd/agenda.ps"))
+         ("~/gtd/agenda.pdf"))
         ;; other commands go here
         ))
 
