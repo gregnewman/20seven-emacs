@@ -67,6 +67,11 @@
  '(org-agenda-window-setup (quote other-window))
  '(org-deadline-warning-days 7)
  '(org-fast-tag-selection-single-key nil)
+ '(org-icalendar-include-body t)
+ '(org-icalendar-include-todo (quote all))
+ '(org-icalendar-store-UID t)
+ '(org-icalendar-use-deadline (quote (event-if-not-todo todo-due)))
+ '(org-icalendar-use-scheduled (quote (event-if-not-todo event-if-todo todo-start)))
  '(org-log-done (quote (done)))
  '(org-refile-targets (quote (("newgtd.org" :maxlevel . 1) ("someday.org" :level . 2))))
  '(org-reverse-note-order nil)
@@ -80,4 +85,6 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(highlight-current-line-face ((t (:background "#333333")))))
+ '(highlight-current-line-face ((t (:background "#131313")))))
+
+(put 'narrow-to-region 'disabled nil)

@@ -178,6 +178,13 @@ START-TIME and END-OF-DAY are the number of minutes past midnight."
         ;; other commands go here
         ))
 
+
+(setq org-combined-agenda-icalendar-file
+    "~/gtd/calendars/OrgMode.ics")
+; '(org-icalendar-include-sexps nil)
+; '(org-icalendar-include-todo nil)
+; '(org-icalendar-store-UID t)
+
 ;(global-set-key (kbd "C-c b") 'org-agenda)
 ;; Change your existing org-agenda-custom-commands
 ;(setq org-agenda-custom-commands
