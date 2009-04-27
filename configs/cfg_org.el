@@ -146,6 +146,9 @@ START-TIME and END-OF-DAY are the number of minutes past midnight."
                       ("@MAC" . ?m)
                       ("@DAILY" . ?.)
                       ("@ME" . ?p)
+                      ("@IDEA" . ?i)
+                      ("@QUESTION" . ?q)
+                      ("@READING" . ?r)
                       ("@JODI" . ?j)
                       ("@STUDIO" . ?s)))
 
