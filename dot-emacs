@@ -51,6 +51,8 @@
  '(default-input-method "latin-1-prefix")
  '(highlight-current-line-globally t nil (highlight-current-line))
  '(make-backup-files nil)
+ '(max-lisp-eval-depth 800)
+ '(max-specpdl-size 3000)
  '(normal-erase-is-backspace t)
  '(org-agenda-files (quote ("~/gtd/inbox.org" "~/gtd/someday.org" "~/gtd/orgphone.org" "~/gtd/taxes.org" "~/gtd/greg.org")))
  '(org-agenda-ndays 7)
@@ -85,6 +87,6 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(highlight-current-line-face ((t (:background "#131313")))))
+ '(highlight-current-line-face ((t (:background "#333333")))))
 
 (put 'narrow-to-region 'disabled nil)
