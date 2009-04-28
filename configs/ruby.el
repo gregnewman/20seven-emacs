@@ -1,5 +1,4 @@
 ;; Rinari
-(add-to-list 'load-path "~/.emacs.d/vendor/rinari")
 (require 'rinari)
 
 ;;; nxml (HTML ERB template support)

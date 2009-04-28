@@ -1,9 +1,7 @@
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Python mode customizations
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(load-file "~/.emacs.d/vendor/python-mode/python-mode.el")
 (require 'python)
 (autoload 'python-mode "python-mode" "Python Mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
@@ -40,8 +38,8 @@
 ;(pymacs-load "ropemacs" "rope-")
 ;(setq ropemacs-enable-autoimport t)
 
-(load-file "~/.emacs.d/vendor/django-html-mode.el")
-(load-file "~/.emacs.d/vendor/django-mode.el")
+(require 'django-html-mode)
+(require 'django-mode)
 
 
 (defun my-compile ()
@@ -82,5 +80,4 @@
 (global-set-key (kbd "C-c C-e") 'rgr/python-execute)
 
 (setq ipython-command "/opt/local/Library/Frameworks/Python.framework/Versions/2.5/bin/ipython")
-(load-file "~/.emacs.d/vendor/ipython.el")
 (require 'ipython)

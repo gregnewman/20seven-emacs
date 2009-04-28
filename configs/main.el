@@ -63,9 +63,9 @@
                                            nil 
                                            'fullboth)))
 
+;;; NOT USING SINCE EMACS 23 DOESN'T SUPPORT FULL SCREEN IN MAC BUILDS YET
 ;(global-set-key [(meta return)] 'toggle-fullscreen) 
-(global-set-key [f11] 'toggle-fullscreen)
-;(global-set-key [C-return]  'toggle-fullscreen)
+;(global-set-key [f11] 'toggle-fullscreen)
 
 ;; bury the buffer
 (global-set-key [f8] 'bury-buffer)
@@ -74,8 +74,7 @@
 (when (fboundp 'windmove-default-keybindings)
       (windmove-default-keybindings))
 
-;; ========== Place Backup Files in Specific Directory ==========
-
+;; Place Backup Files in Specific Directory
 ;; Enable backup files.
 (setq make-backup-files t)
 
