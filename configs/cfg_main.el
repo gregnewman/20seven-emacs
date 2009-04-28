@@ -176,7 +176,7 @@
 
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
 (require 'magit)
-;(autoload 'magit-status "magit" nil t)
+(autoload 'magit-status "magit" nil t)
 
 (require 'vernacular-time)
 
@@ -185,12 +185,6 @@
 (pc-selection-mode)
 
 (server-start)
-
-(setq inferior-lisp-program "/usr/local/bin/sbcl") ; your Lisp system
-     (add-to-list 'load-path "~/.emacs.d/vendor/slime/")  ; your SLIME directory
-     (require 'slime)
-     (slime-setup)
-
 
 (require 'smex)
 (smex-initialize)

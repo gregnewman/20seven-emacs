@@ -27,6 +27,8 @@
                   "cfg_anything"
                   "cfg_dired"
                   "cfg_git"
-                  "cfg_highlight_line"))
+                  "cfg_slime"
+                  "cfg_highlight_line"
+                  "custom"))
 
 (setq custom-file "~/.emacs.d/configs/custom.el")
