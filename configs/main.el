@@ -31,7 +31,6 @@
 (setq default-tab-width 4)
 
 ;; line numbers
-(load-file "~/.emacs.d/vendor/linum.el")
 (global-linum-mode 1)
 (setq column-number-mode  t)
 
