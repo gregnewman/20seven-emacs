@@ -51,8 +51,6 @@
  '(default-input-method "latin-1-prefix")
  '(highlight-current-line-globally t nil (highlight-current-line))
  '(make-backup-files nil)
- '(max-lisp-eval-depth 800)
- '(max-specpdl-size 3000)
  '(normal-erase-is-backspace t)
  '(org-agenda-files (quote ("~/gtd/inbox.org" "~/gtd/someday.org" "~/gtd/orgphone.org" "~/gtd/taxes.org" "~/gtd/greg.org")))
  '(org-agenda-ndays 7)
