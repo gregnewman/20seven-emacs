@@ -16,19 +16,37 @@
     (message "Loaded config file: %s" file)
     ))
  
-(load-cfg-files '("cfg_main"
-                  "cfg_org"
-                  "cfg_yasnippet"
-                  "cfg_browse_kill_ring"
-                  "cfg_python"
-                  "cfg_ruby"
-                  "cfg_theme"
-                  "cfg_ido"
-                  "cfg_anything"
-                  "cfg_dired"
-                  "cfg_git"
-                  "cfg_slime"
-                  "cfg_highlight_line"
-                  "custom"))
+(load-cfg-files '("anything"
+                  "browse_kill_ring"
+                  "custom"
+                  "dired"
+                  "git"
+                  "highlight_line"
+                  "ido"
+                  "javascript"
+                  "lorem"
+                  "main"
+                  "org"
+                  "python"
+                  "ruby"
+                  "shell"
+                  "slime"
+                  "smex"
+                  "textmate"
+                  "theme"
+                  "yasnippet"))
 
 (setq custom-file "~/.emacs.d/configs/custom.el")
+
+(require 'cl)
+(require 'font-lock)
+(require 'grep-o-matic)
+(require 'growl)
+(require 'nav)
+(require 'vernacular-time)
+
+;; gist support for github
+(require 'gist)
+
+;; dpaste
+(require 'dpaste)

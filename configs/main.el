@@ -1,6 +1,3 @@
-;; Other configuration
-(require 'cl)
-
 ;; no splash screen
 (setq inhibit-startup-message t)
 
@@ -42,9 +39,6 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
-;; Make sure we have font-lock to start with
-(require 'font-lock)
-
 ;; log the time of the things I have done
 (setq-default org-log-done t) 
 
@@ -57,26 +51,11 @@
 (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
-;; See http://www.delorie.com/gnu/docs/elisp-manual-21/elisp_620.html
-;; and http://www.gnu.org/software/emacs/manual/elisp.pdf
-
 ;; disable line wrap
 (setq default-truncate-lines nil)
 
 ;; make side by side buffers function the same as the main window
 (setq truncate-partial-width-windows nil)
-
-;; Add F12 to toggle line wrap
-;(global-set-key [f8] 'toggle-truncate-lines)
-
-;(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-; '(default ((t (:stipple nil :background "#1e1e27" :foreground "#cfbfad" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight semi-light :height 140 :width normal :family "apple-inconsolata-medium"))))
-; '(highlight-current-line-face ((t (:background "#000000")))))
-
 
 ;; full screen toggle using command+[RET]
 (defun toggle-fullscreen () 
@@ -92,52 +71,9 @@
 ;; bury the buffer
 (global-set-key [f8] 'bury-buffer)
 
-;; multi-term
-(require 'multi-term)
-(multi-term-keystroke-setup) 
-(setq multi-term-program "/bin/bash") 
-
-;; gist support for github
-(load-file "~/.emacs.d/vendor/gist.el")
-
-;; dpaste
-(load-file "~/.emacs.d/vendor/dpaste.el")
-
 ;; windmove bindings
 (when (fboundp 'windmove-default-keybindings)
       (windmove-default-keybindings))
-
-
-;; dired-details+
-;(require 'dired+)
-(require 'dired-details)
-(require 'dired-details+)
-(setq dired-details-hidden-string "")
-
-;; Add in lorem-ipsum
-(load-file "~/.emacs.d/vendor/lorem-ipsum.el")
-(add-hook 'sgml-mode-hook (lambda ()
-			    (setq Lorem-ipsum-paragraph-separator "<br><br>\n"
-				  Lorem-ipsum-sentence-separator "&nbsp;&nbsp;"
-				  Lorem-ipsum-list-beginning "<ul>\n"
-				  Lorem-ipsum-list-bullet "<li>"
-				  Lorem-ipsum-list-item-end "</li>\n"
-				  Lorem-ipsum-list-end "</ul>\n")))
-
-(defun sendOmni () 
-  (interactive)
-  (let ((fname (buffer-file-name (current-buffer))))
-	(do-applescript (concat "tell front document of application \"OmniFocus\" 
-                set aTask to (make new inbox task with properties {name:\"From Emacs " 
-				(buffer-name (current-buffer)) "\", note:\"file:///" fname "  \" })
-                    tell note of aTask
-		      make new file attachment with properties {file name:\"" fname "\"}
-	            end tell
-             end tell"))
-	))
-
-;; I use F3 for omnifocus clipping...
-(global-set-key [f3] 'sendOmni)
 
 ;; ========== Place Backup Files in Specific Directory ==========
 
@@ -163,41 +99,13 @@
 (setq auto-save-file-name-transforms
       `((".*" ,user-temporary-file-directory t)))
 
-;; When things go wrong, turn this on
-;(toggle-debug-on-error t)
-
-(require 'growl)
-
-
-; textmate
-(add-to-list 'load-path "~/.emacs.d/vendor/textmate")
-(require 'textmate)
-(textmate-mode)
-
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
-(require 'magit)
-(autoload 'magit-status "magit" nil t)
-
-(require 'vernacular-time)
 
 (setq delete-old-versions t)
 
 (pc-selection-mode)
 
 (server-start)
-
-(require 'smex)
-(smex-initialize)
-
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c M-x") 'smex-update-and-run)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-x M-x") 'execute-extended-command) 
-
-(load-file "~/.emacs.d/vendor/ack.el")
-
-(require 'grep-o-matic)
 
 (setq initial-frame-alist '((top . 1) 
                             (left . 1) 
@@ -216,14 +124,3 @@
              (not (string-equal name "greg.org"))
              (kill-buffer buffer)))
       (setq list (cdr list)))))
-
-
-;; js2-mode
-;(load "vendor/javascript")
-;; if it won't byte-compile then run from the command line
-;; emacs --batch --eval '(byte-compile-file "js2.el")'
-;(autoload 'js2-mode "js2" nil t)
-;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-
-(add-to-list 'load-path "~/.emacs.d/vendor/emacs-nav-13")
-(require 'nav)

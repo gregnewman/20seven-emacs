@@ -4,3 +4,6 @@
 (require 'git)
 (autoload 'git-blame-mode "git-blame"
   "Minor mode for incremental blame for git" t)
+
+(require 'magit)
+(autoload 'magit-status "magit" nil t)

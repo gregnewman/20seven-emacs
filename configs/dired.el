@@ -1,3 +1,9 @@
+;; dired-details+
+;(require 'dired+)
+(require 'dired-details)
+(require 'dired-details+)
+(setq dired-details-hidden-string "")
+
 (require 'dired-x) 
 (setq dired-omit-files 
       (rx (or (seq bol (? ".") "#")         ;; emacs autosave files 
