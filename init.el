@@ -1,19 +1,11 @@
 (load-library "iso-transl")
-(setq load-path (cons "~/.emacs.d" load-path))
-(setq load-path (cons "~/.emacs.d/vendor" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/yasnippet" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/Pymacs" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/elscreen" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/dired" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/smex" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/emacs-grep-o-matic" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/anything" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/remember-2.0" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/org-mode" load-path))
+
+(add-to-list 'load-path "~/.emacs.d/vendor")
+(progn (cd "~/.emacs.d/vendor")
+       (normal-top-level-add-subdirs-to-load-path))
+
 (setq load-path (cons "~/.emacs.d/vendor/org-mode/lisp" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/org-mode/contrib/lisp" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/color-theme" load-path))
-
 
 (defconst emacs-config-dir "~/.emacs.d/configs/" "")
  
