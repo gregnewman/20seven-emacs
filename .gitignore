@@ -4,6 +4,5 @@ auto-save-list/
 *.el~
 anything-c-adaptive-history
 vendor/nxhtml
-vendor/rinari
 .org-id-locations
 vendor/js2.elc

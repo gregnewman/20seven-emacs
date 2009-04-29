@@ -23,6 +23,7 @@ I try to use as many submodules as I can to keep up to date with development rel
 * vendor/magit (magit_0.6.1-27-g54ad9f0)
 * vendor/org-mode (release_6.25d-64-g68ffdca)
 * vendor/remember-2.0 (v2.0-1-gc427b15)
+* vendor/rinari (heads/master)
 * vendor/slime (heads/master)
 * vendor/smex (heads/master)
 * vendor/textmate (heads/master)
