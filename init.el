@@ -40,8 +40,7 @@
 
 (setq custom-file "~/.emacs.d/configs/custom.el")
 
-(require 'cl)
-(require 'cheat)
+;(require 'cl)
 (require 'dpaste)
 (require 'font-lock)
 (require 'gist)
@@ -49,3 +48,4 @@
 (require 'growl)
 (require 'nav)
 (require 'vernacular-time)
+(require 'nxhtml)
