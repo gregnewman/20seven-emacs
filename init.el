@@ -48,4 +48,3 @@
 (require 'growl)
 (require 'nav)
 (require 'vernacular-time)
-(require 'nxhtml)
