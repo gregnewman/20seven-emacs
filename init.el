@@ -4,6 +4,8 @@
 (progn (cd "~/.emacs.d/vendor")
        (normal-top-level-add-subdirs-to-load-path))
 
+(setq load-path (cons "~/.emacs.d/vendor/rinari/util" load-path))
+(setq load-path (cons "~/.emacs.d/vendor/rinari/util/jump" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/org-mode/lisp" load-path))
 (setq load-path (cons "~/.emacs.d/vendor/org-mode/contrib/lisp" load-path))
 
@@ -39,6 +41,7 @@
 (setq custom-file "~/.emacs.d/configs/custom.el")
 
 (require 'cl)
+(require 'cheat)
 (require 'dpaste)
 (require 'font-lock)
 (require 'gist)
