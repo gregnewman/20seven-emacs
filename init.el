@@ -47,4 +47,5 @@
 (require 'grep-o-matic)
 (require 'growl)
 (require 'nav)
+(require 'textile-mode)
 (require 'vernacular-time)
