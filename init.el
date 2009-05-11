@@ -21,7 +21,6 @@
 (load-cfg-files '("anything"
                   "browse_kill_ring"
                   "custom"
-                  "dired"
                   "git"
                   "highlight_line"
                   "ido"
@@ -47,5 +46,6 @@
 (require 'grep-o-matic)
 (require 'growl)
 (require 'nav)
+(require 'saveplace)
 (require 'textile-mode)
 (require 'vernacular-time)
