@@ -203,3 +203,4 @@ START-TIME and END-OF-DAY are the number of minutes past midnight."
 )
 
 (require 'org-annotation-quicksilver)
+(server-start)
