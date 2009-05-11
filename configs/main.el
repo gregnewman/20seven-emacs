@@ -31,8 +31,8 @@
 (setq default-tab-width 4)
 
 ;; line numbers
-(global-linum-mode 1)
-(setq column-number-mode  t)
+;(global-linum-mode 1)
+;(setq column-number-mode  t)
 
 ;; turn off tool bar, and menu bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -65,7 +65,7 @@
 
 ;;; NOT USING SINCE EMACS 23 DOESN'T SUPPORT FULL SCREEN IN MAC BUILDS YET
 ;(global-set-key [(meta return)] 'toggle-fullscreen) 
-;(global-set-key [f11] 'toggle-fullscreen)
+(global-set-key [f11] 'toggle-fullscreen)
 
 ;; bury the buffer
 (global-set-key [f8] 'bury-buffer)
@@ -122,3 +122,8 @@
              (not (string-equal name "greg.org"))
              (kill-buffer buffer)))
       (setq list (cdr list)))))
+
+
+;; SavePlace
+(setq save-place-file "~/saveplace") ;; keep my ~/ clean
+(setq-default save-place t)                   ;; activate it for all buffers
