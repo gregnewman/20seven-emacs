@@ -31,8 +31,8 @@
 (setq default-tab-width 4)
 
 ;; line numbers
-;(global-linum-mode 1)
-;(setq column-number-mode  t)
+(global-linum-mode 1)
+(setq column-number-mode  t)
 
 ;; turn off tool bar, and menu bar
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))

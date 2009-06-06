@@ -18,8 +18,7 @@
     (message "Loaded config file: %s" file)
     ))
  
-(load-cfg-files '("anything"
-                  "browse_kill_ring"
+(load-cfg-files '("browse_kill_ring"
                   "custom"
                   "git"
                   "highlight_line"
