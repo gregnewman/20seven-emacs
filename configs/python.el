@@ -8,7 +8,7 @@
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 (setq interpreter-mode-alist
       (cons '("python" . python-mode)
-	    interpreter-mode-alist)
+            interpreter-mode-alist)
       python-mode-hook
       '(lambda () (progn
 		    (set-variable 'py-indent-offset 4)
@@ -18,7 +18,7 @@
             (define-key python-mode-map "\C-m" 'newline-and-indent)
 		    ;;(pabbrev-mode)
 		    (abbrev-mode)
-	 )
+            )
       )
 )
 
