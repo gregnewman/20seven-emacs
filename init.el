@@ -48,3 +48,5 @@
 (require 'saveplace)
 (require 'textile-mode)
 (require 'vernacular-time)
+(require 'pymacs)
+(require 'auto-complete)
