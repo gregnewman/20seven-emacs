@@ -37,3 +37,9 @@
 [submodule "vendor/cheat"]
 	path = vendor/cheat
 	url = git://github.com/defunkt/cheat.git
+[submodule "vendor/yasnippet/snippets/django"]
+	path = vendor/yasnippet/snippets/django
+	url = git@github.com:gregnewman/yasnippet-django.git
+[submodule "vendor/yasnippet/snippets/django-mode"]
+	path = vendor/yasnippet/snippets/django-mode
+	url = git@github.com:gregnewman/yasnippet-django.git
