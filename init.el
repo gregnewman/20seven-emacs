@@ -49,3 +49,4 @@
 (require 'vernacular-time)
 (require 'pymacs)
 (require 'auto-complete)
+(require 'rst)
