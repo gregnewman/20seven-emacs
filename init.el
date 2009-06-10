@@ -50,3 +50,4 @@
 (require 'pymacs)
 (require 'auto-complete)
 (require 'rst)
+(require 'flyspell)
