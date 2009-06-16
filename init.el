@@ -51,3 +51,9 @@
 (require 'auto-complete)
 (require 'rst)
 (require 'flyspell)
+
+
+(setq confirm-kill-emacs
+      (lambda (e)
+        (y-or-n-p-with-timeout
+         "Really exit Emacs (automatically exits in 5 secs)? " 5 t)))

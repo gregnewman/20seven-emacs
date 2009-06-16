@@ -40,9 +40,9 @@
             ;; yasnippet
             (make-variable-buffer-local 'yas/trigger-key)
             (setq yas/trigger-key [tab])
-            (define-key yas/keymap [tab] 'yas/next-field-group)))
+            (define-key yas/keymap [tab] 'yas/next-field-group)
             ;; flyspell mode to spell checking everywhere
-;;            (flyspell-mode 1)))
+            (flyspell-mode 1)))
 
 (setq org-todo-keywords (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
  (sequence "WAITING(w@/!)" "SOMEDAY(S!)" "PROJECT(P@)" "OPEN(O@)" "|" "CANCELLED(c@/!)")
@@ -238,3 +238,27 @@
 ;; save all org files every minute
 (run-at-time "00:59" 3600 'org-save-all-org-buffers)
 
+;; Custom Key Bindings
+(global-set-key (kbd "<f12>") 'org-agenda)
+(global-set-key (kbd "<f5>") 'my-org-todo)
+(global-set-key (kbd "<S-f5>") 'widen)
+(global-set-key (kbd "<f7>") 'set-truncate-lines)
+(global-set-key (kbd "<f8>") 'org-cycle-agenda-files)
+(global-set-key (kbd "<f9> b") 'bbdb)
+(global-set-key (kbd "<f9> c") 'calendar)
+(global-set-key (kbd "<f9> f") 'boxquote-insert-file)
+(global-set-key (kbd "<f9> g") 'gnus)
+(global-set-key (kbd "<f9> i") (lambda ()
+                                 (interactive)
+                                 (info "~/git/org-mode/doc/org.info")))
+(global-set-key (kbd "<f9> o") 'org-occur)
+(global-set-key (kbd "<f9> r") 'boxquote-region)
+(global-set-key (kbd "<f9> u") (lambda ()
+                                 (interactive)
+                                 (untabify (point-min) (point-max))))
+(global-set-key (kbd "<f9> v") 'visible-mode)
+(global-set-key (kbd "C-<f9>") 'previous-buffer)
+(global-set-key (kbd "C-x n r") 'narrow-to-region)
+(global-set-key (kbd "C-<f10>") 'next-buffer)
+(global-set-key (kbd "<f11>") 'org-clock-goto)
+(global-set-key (kbd "C-s-<f12>") 'my-save-then-publish)
