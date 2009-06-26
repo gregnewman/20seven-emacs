@@ -4,6 +4,21 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/vendor/org-mode/lisp"))
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
 (require 'org-install)
+(server-start)
+(require 'org-protocol)
+;(require 'org-annotation-quicksilver)
+
+(defun my-custom-handler (data)
+  (let ((content (org-protocol-split-data data t)))
+    (delete-other-windows)
+    (sit-for 2)
+    (animate-sequence content 2))
+  nil)
+
+(setq org-protocol-protocol-alist
+      '(("Screencast goodie"
+         :protocol "screencast"
+         :function my-custom-handler)))
 
 ;;
 ;; Standard key bindings
@@ -105,7 +120,7 @@
 (setq org-remember-templates (quote (("todo" ?t "* TODO %?
   %u
   %a" "~/hgfiles/org/tasks.org" bottom nil)
-                                     ("note" ?n "* %?                                        :NOTE:
+                                     ("note" ?n "* %?                                      :NOTE:
   %u
   %a" nil bottom nil)
                                      ("phone" ?p "* PHONE %:name - %:company -                :PHONE:

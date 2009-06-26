@@ -17,10 +17,15 @@
            (concat emacs-config-dir file)))
     (message "Loaded config file: %s" file)
     ))
+
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/w3m")
+;(if window-system
+;   (require 'w3m-load))
  
 (load-cfg-files '("browse_kill_ring"
                   "custom"
                   "git"
+                  "gnus"
                   "highlight_line"
                   "ido"
                   "javascript"

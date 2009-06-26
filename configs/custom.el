@@ -49,3 +49,18 @@
 ;;  '(highlight-current-line-face ((t (:background "#333333")))))
 
 ;; (put 'narrow-to-region 'disabled nil)
+
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(highlight-current-line-globally t nil (highlight-current-line))
+ '(org-agenda-files (quote ("~/hgfiles/org/org.org" "~/hgfiles/org/tasks.org" "~/hgfiles/org/notes.org" "~/hgfiles/org/phone.org" "~/hgfiles/org/jodi.org" "~/hgfiles/org/greg.org" "~/hgfiles/org/move.org" "~/hgfiles/org/studio.org" "~/hgfiles/org/mind.org" "~/hgfiles/org/archive.org"))))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(highlight-current-line-face ((t (:background "#333333")))))
