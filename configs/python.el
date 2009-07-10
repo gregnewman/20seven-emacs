@@ -33,6 +33,7 @@
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                                         
 ;;; Auto-completion                                                                                            
 ;;;  Integrates:                                                                                               
@@ -80,9 +81,16 @@
             (setcdr (nthcdr (1- ac-limit) cand) nil))
         (setq candidates (append candidates cand))))
     (delete-dups candidates)))
+
+(defun python-auto-fill-comments-only ()
+  (auto-fill-mode 1)
+  (set (make-local-variable 'fill-nobreak-predicate)
+       (lambda ()
+         (not (python-in-string/comment)))))
 (add-hook 'python-mode-hook
           (lambda ()
                  (auto-complete-mode 1)
+                 (python-auto-fill-comments-only)
                  (set (make-local-variable 'ac-sources)
                       (append ac-sources '(ac-source-rope) '(ac-source-yasnippet)))
                  (set (make-local-variable 'ac-find-function) 'ac-python-find)

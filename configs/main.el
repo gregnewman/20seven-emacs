@@ -4,6 +4,9 @@
 ;; use UTF-8
 (prefer-coding-system 'utf-8)
 
+; Lines shouldn't be longer than 79 chars
+(setq fill-column 72)
+
 ;; allow remote editing through transmit
 (setq backup-by-copying t) 
 
