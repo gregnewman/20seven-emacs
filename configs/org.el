@@ -1,11 +1,12 @@
 ;;;
 ;;; Org Mode
 ;;;
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/vendor/org-mode/lisp"))
+
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
-(require 'org-install)
-(server-start)
+
+(require 'org)
 (require 'org-protocol)
+(server-start)
 ;(require 'org-annotation-quicksilver)
 
 (defun my-custom-handler (data)
@@ -35,6 +36,7 @@
                                "~/hgfiles/org/move.org"
                                "~/hgfiles/org/studio.org"
                                "~/hgfiles/org/mind.org"
+                               "~/hgfiles/org/ll-track.org"
                                "~/hgfiles/org/archive.org")))
 
 (defun gtd ()
@@ -83,9 +85,55 @@
               ("STARTED" ("WAITING"))
               ("PROJECT" ("CANCELLED") ("PROJECT" . t)))))
 
-
+;;
+;; Resume clocking tasks when emacs is restarted
+(setq org-clock-persistence-insinuate)
+;;
+;; Yes it's long... but more is better ;)
+(setq org-clock-history-length 35)
+;; Resume clocking task on clock-in if the clock is open
+(setq org-clock-in-resume t)
 ;; Change task state to STARTED when clocking in
 (setq org-clock-in-switch-to-state "STARTED")
+;; Save clock data and notes in the LOGBOOK drawer
+(setq org-clock-into-drawer t)
+;; Sometimes I change tasks I'm clocking quickly - this removes clocked tasks with 0:00 duration
+(setq org-clock-out-remove-zero-time-clocks t)
+;; Don't clock out when moving task to a done state
+(setq org-clock-out-when-done nil)
+;; Save the running clock and all clock history when exiting Emacs, load it on startup
+(setq org-clock-persist t)
+;; Agenda clock report parameters (no links, 2 levels deep)
+(setq org-agenda-clockreport-parameter-plist (quote (:link nil :maxlevel 2)))
+; Set default column view headings: Task Effort Clock_Summary
+(setq org-columns-default-format "%80ITEM(Task) %10Effort(Effort){:} %10CLOCKSUM")
+; global Effort estimate values
+(setq org-global-properties (quote (("Effort_ALL" . "0:10 0:30 1:00 2:00 3:00 4:00 5:00 6:00 8:00"))))
+; generate unique attachment id's
+(setq org-id-method (quote uuidgen))
+; copy org attachments
+(setq org-attach-method 'cp)
+; set copy directory
+(setq org-attach-directory "~/hgfiles/org/data")
+; underline the line in the agenda that you are on
+(add-hook 'org-agenda-mode-hook '(lambda () (hl-line-mode 1)))
+
+(add-hook 'org-clock-in-prepare-hook 
+          'my-org-mode-ask-effort)
+
+; use org-clock-in-prepare-hook to add an effort estimate. 
+; This way you can easily have a "tea-timer" for your tasks when they don't 
+; already have an effort estimate.
+(defun my-org-mode-ask-effort ()
+  "Ask for an effort estimate when clocking in."
+  (unless (org-entry-get (point) "Effort")
+    (let ((effort 
+           (completing-read 
+            "Effort: "
+            (org-entry-get-multivalued-property (point) "Effort"))))
+      (unless (equal effort "")
+        (org-set-property "Effort" effort)))))
+
 
 ;;
 ;;;  Load Org Remember Stuff
