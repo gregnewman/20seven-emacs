@@ -52,14 +52,14 @@
 
 
 ;; Make TAB the yas trigger key in the org-mode-hook and turn on flyspell mode
-(add-hook 'org-mode-hook
-          (lambda ()
-            ;; yasnippet
-            (make-variable-buffer-local 'yas/trigger-key)
-            (setq yas/trigger-key [tab])
-            (define-key yas/keymap [tab] 'yas/next-field-group)
-            ;; flyspell mode to spell checking everywhere
-            (flyspell-mode 1)))
+;; (add-hook 'org-mode-hook
+;;           (lambda ()
+;;             ;; yasnippet
+;;             (make-variable-buffer-local 'yas/trigger-key)
+;;             (setq yas/trigger-key [tab])
+;;             (define-key yas/keymap [tab] 'yas/next-field-group)
+;;             ;; flyspell mode to spell checking everywhere
+;;             (flyspell-mode 1)))
 
 (setq org-todo-keywords (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
  (sequence "WAITING(w@/!)" "SOMEDAY(S!)" "PROJECT(P@)" "OPEN(O@)" "|" "CANCELLED(c@/!)")

@@ -42,7 +42,7 @@
                   "python"
                   "ruby"
                   "shell"
-                  "slime"
+;                  "slime"
                   "smex"
                   "textmate"
                   "theme"
@@ -62,7 +62,7 @@
 (require 'pymacs)
 (require 'auto-complete)
 (require 'rst)
-(require 'flyspell)
+;(require 'flyspell)
 
 (setq confirm-kill-emacs
       (lambda (e)

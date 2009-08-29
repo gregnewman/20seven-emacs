@@ -68,7 +68,7 @@
 
 ;;; NOT USING SINCE EMACS 23 DOESN'T SUPPORT FULL SCREEN IN MAC BUILDS YET
 ;(global-set-key [(meta return)] 'toggle-fullscreen) 
-(global-set-key [f11] 'toggle-fullscreen)
+(global-set-key (kbd "C-,") 'toggle-fullscreen)
 
 ;; bury the buffer
 (global-set-key [f8] 'bury-buffer)
