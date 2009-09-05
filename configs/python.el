@@ -196,3 +196,13 @@
       (append '(("\\.txt$" . rst-mode)
                 ("\\.rst$" . rst-mode)
                 ("\\.rest$" . rst-mode)) auto-mode-alist))
+
+
+(defun fix-django-templates ()
+  "This will fix django templates that have improper whitespace"
+  (interactive
+   (progn
+     (beginning-of-buffer
+      (query-replace-regexp "{{\\([\\w\\\"]\\)" "{{ \\1"))
+     (beginning-of-buffer
+      (query-replace-regexp "\\([\\w\\\"]\\)}}" "\\1 }}")))))
