@@ -7,7 +7,6 @@
 (require 'org)
 (require 'org-protocol)
 (server-start)
-;(require 'org-annotation-quicksilver)
 
 (defun my-custom-handler (data)
   (let ((content (org-protocol-split-data data t)))
@@ -33,33 +32,14 @@
                                "~/hgfiles/org/org.org"
                                "~/hgfiles/org/jodi.org"
                                "~/hgfiles/org/greg.org"
-                               "~/hgfiles/org/move.org"
                                "~/hgfiles/org/studio.org"
                                "~/hgfiles/org/mind.org"
-                               "~/hgfiles/org/ll-track.org"
                                "~/hgfiles/org/archive.org")))
 
 (defun gtd ()
    (interactive)
    (find-file "~/hgfiles/org/todo.org")
 )
-
-;;(setq message-mode-hook
-;;      (quote (orgstruct++-mode
-;;              (lambda nil (setq fill-column 72) (flyspell-mode 1))
-;;              turn-on-auto-fill
-;;              bbdb-define-all-aliases)))
-
-
-;; Make TAB the yas trigger key in the org-mode-hook and turn on flyspell mode
-;; (add-hook 'org-mode-hook
-;;           (lambda ()
-;;             ;; yasnippet
-;;             (make-variable-buffer-local 'yas/trigger-key)
-;;             (setq yas/trigger-key [tab])
-;;             (define-key yas/keymap [tab] 'yas/next-field-group)
-;;             ;; flyspell mode to spell checking everywhere
-;;             (flyspell-mode 1)))
 
 (setq org-todo-keywords (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
  (sequence "WAITING(w@/!)" "SOMEDAY(S!)" "PROJECT(P@)" "OPEN(O@)" "|" "CANCELLED(c@/!)")
@@ -135,10 +115,10 @@
         (org-set-property "Effort" effort)))))
 
 
-;;
-;;;  Load Org Remember Stuff
-(require 'remember)
 (org-remember-insinuate)
+     (setq org-directory "~/hgfiles/org/")
+     (setq org-default-notes-file (concat org-directory "/notes.org"))
+     (define-key global-map "\C-cr" 'org-remember)
 
 ;; Start clock if a remember buffer includes :CLOCK-IN:
 (add-hook 'remember-mode-hook 'my-start-clock-if-needed 'append)
@@ -176,6 +156,7 @@
   %u
   :CLOCK-IN:
   %?" "~/hgfiles/org/phone.org" bottom nil))))
+
 
 
 ;;
