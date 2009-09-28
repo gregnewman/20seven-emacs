@@ -1,12 +1,3 @@
-[submodule "vendor/textmate.el"]
-	path = vendor/textmate.el
-	url = git://github.com/defunkt/textmate.el.git
-[submodule "vendor/magit"]
-	path = vendor/magit
-	url = git://gitorious.org/magit/mainline.git
-[submodule "vendor/textmate"]
-	path = vendor/textmate
-	url = git://github.com/defunkt/textmate.el.git
 [submodule "vendor/color-theme/twilight-emacs"]
 	path = vendor/color-theme/twilight-emacs
 	url = git://github.com/crafterm/twilight-emacs.git
@@ -28,12 +19,6 @@
 [submodule "vendor/emacs-grep-o-matic"]
 	path = vendor/emacs-grep-o-matic
 	url = git://github.com/ZungBang/emacs-grep-o-matic.git
-[submodule "vendor/org-mode"]
-	path = vendor/org-mode
-	url = git://repo.or.cz/org-mode.git
-[submodule "vendor/rinari"]
-	path = vendor/rinari
-	url = git://github.com/eschulte/rinari.git
 [submodule "vendor/cheat"]
 	path = vendor/cheat
 	url = git://github.com/defunkt/cheat.git
@@ -43,3 +28,6 @@
 [submodule "vendor/yasnippet/snippets/django-mode"]
 	path = vendor/yasnippet/snippets/django-mode
 	url = git@github.com:gregnewman/yasnippet-django.git
+[submodule "vendor/org-mode"]
+	path = vendor/org-mode
+	url = git://repo.or.cz/org-mode.git
