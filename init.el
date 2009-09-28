@@ -7,13 +7,6 @@
 (progn (cd "~/.emacs.d/vendor")
        (normal-top-level-add-subdirs-to-load-path))
 
-(setq load-path (cons "~/.emacs.d/vendor/rinari/util" load-path))
-(setq load-path (cons "~/.emacs.d/vendor/rinari/util/jump" load-path))
-;(add-to-list 'load-path "~/.emacs.d/vendor/org-mode/lisp")
-;(add-to-list 'load-path "~/.emacs.d/vendor/org-mode/contrib/lisp")
-;(setq load-path (cons "~/.emacs.d/vendor/org-mode/lisp" load-path))
-;(setq load-path (cons "~/.emacs.d/vendor/org-mode/contrib/lisp" load-path))
-
 (defconst emacs-config-dir "~/.emacs.d/configs/" "")
 (setq load-path (cons "~/.emacs.d" load-path))
 (defun load-cfg-files (filelist)
@@ -23,11 +16,6 @@
     (message "Loaded config file: %s" file)
     ))
 
-
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/w3m")
-;(if window-system
-;   (require 'w3m-load))
-;(require 'org-mac-protocol)
 
 (load-cfg-files '("browse_kill_ring"
                   "custom"
@@ -44,7 +32,6 @@
                   "shell"
 ;                  "slime"
                   "smex"
-                  "textmate"
                   "theme"
                   "yasnippet"))
 
@@ -62,6 +49,7 @@
 (require 'pymacs)
 (require 'auto-complete)
 (require 'rst)
+(require 'mercurial)
 ;(require 'flyspell)
 
 (setq confirm-kill-emacs
