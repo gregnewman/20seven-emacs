@@ -34,7 +34,7 @@
 (setq default-tab-width 4)
 
 ;; line numbers
-(global-linum-mode 1)
+;(global-linum-mode 1)
 (setq column-number-mode  t)
 
 ;; turn off tool bar, and menu bar
@@ -111,9 +111,9 @@
 
 (server-start)
 
-(setq initial-frame-alist '((top . 1) 
-                            (left . 1) 
-                            (width . 100) 
+(setq initial-frame-alist '((top . 50) 
+                            (left . 200) 
+                            (width . 120) 
                             (height . 45)))
 
 ;; clean out buffers except shell, agenda and org
