@@ -29,6 +29,7 @@
                   "org"
                   "python"
                   "ruby"
+                  "rst"
                   "shell"
 ;                  "slime"
                   "smex"
@@ -50,7 +51,7 @@
 (require 'auto-complete)
 (require 'rst)
 (require 'mercurial)
-;(require 'flyspell)
+(require 'flyspell)
 
 (setq confirm-kill-emacs
       (lambda (e)
