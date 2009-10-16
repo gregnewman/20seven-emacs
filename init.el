@@ -31,7 +31,7 @@
                   "ruby"
                   "rst"
                   "shell"
-;                  "slime"
+                  "slime"
                   "smex"
                   "theme"
                   "yasnippet"))
@@ -41,7 +41,6 @@
 (require 'dpaste)
 (require 'font-lock)
 (require 'gist)
-(require 'grep-o-matic)
 (require 'growl)
 (require 'nav)
 (require 'saveplace)
