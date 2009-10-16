@@ -5,6 +5,7 @@
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
 
 (require 'org)
+(require 'org-install)
 (require 'org-protocol)
 (server-start)
 
