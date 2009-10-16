@@ -34,7 +34,7 @@
 (setq default-tab-width 4)
 
 ;; line numbers
-;(global-linum-mode 1)
+(global-linum-mode 1)
 (setq column-number-mode  t)
 
 ;; turn off tool bar, and menu bar
@@ -133,3 +133,20 @@
 ;; SavePlace
 (setq save-place-file "~/saveplace") ;; keep my ~/ clean
 (setq-default save-place t)                   ;; activate it for all buffers
+
+
+; CSS color values colored by themselves
+; http://xahlee.org/emacs/emacs_html.html
+  
+(defvar hexcolour-keywords
+'(("#[abcdef[:digit:]]\\{6\\}"
+   (0 (put-text-property
+       (match-beginning 0)
+       (match-end 0)
+       'face (list :background 
+                   (match-string-no-properties 0)))))))
+
+(defun hexcolour-add-to-font-lock ()
+(font-lock-add-keywords nil hexcolour-keywords))
+
+(add-hook 'css-mode-hook 'hexcolour-add-to-font-lock)
