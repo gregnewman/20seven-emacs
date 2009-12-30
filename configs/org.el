@@ -9,6 +9,7 @@
 (require 'org-protocol)
 (server-start)
 
+
 (defun my-custom-handler (data)
   (let ((content (org-protocol-split-data data t)))
     (delete-other-windows)
@@ -28,12 +29,17 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 
 (setq org-agenda-files (quote ("~/hgfiles/org/tasks.org"
+                               "~/hgfiles/org/test.org"
                                "~/hgfiles/org/notes.org"
                                "~/hgfiles/org/phone.org"
                                "~/hgfiles/org/org.org"
                                "~/hgfiles/org/jodi.org"
                                "~/hgfiles/org/greg.org"
+                               "~/hgfiles/org/inbox.org"
+                               "~/hgfiles/org/huge.org"
+                               "~/hgfiles/org/nasuni.org"
                                "~/hgfiles/org/studio.org"
+                               "~/hgfiles/org/spotmeeter.org"
                                "~/hgfiles/org/mind.org"
                                "~/hgfiles/org/archive.org")))
 
@@ -41,6 +47,8 @@
    (interactive)
    (find-file "~/hgfiles/org/todo.org")
 )
+
+(setq org-drawers (quote ("PROPERTIES" "CLOCK" "LOGBOOK" "NOTES" "COMMENTS" "LINKS")))
 
 (setq org-todo-keywords (quote ((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d!/!)")
  (sequence "WAITING(w@/!)" "SOMEDAY(S!)" "PROJECT(P@)" "OPEN(O@)" "|" "CANCELLED(c@/!)")
@@ -282,6 +290,8 @@
 
 ;; save all org files every minute
 (run-at-time "00:59" 3600 'org-save-all-org-buffers)
+;; after save push to mobile stage dir
+(add-hook 'after-save-hook 'org-mobile-push)
 
 ;; Custom Key Bindings
 (global-set-key (kbd "<f12>") 'org-agenda)
@@ -293,9 +303,6 @@
 (global-set-key (kbd "<f9> c") 'calendar)
 (global-set-key (kbd "<f9> f") 'boxquote-insert-file)
 (global-set-key (kbd "<f9> g") 'gnus)
-(global-set-key (kbd "<f9> i") (lambda ()
-                                 (interactive)
-                                 (info "~/git/org-mode/doc/org.info")))
 (global-set-key (kbd "<f9> o") 'org-occur)
 (global-set-key (kbd "<f9> r") 'boxquote-region)
 (global-set-key (kbd "<f9> u") (lambda ()
@@ -307,3 +314,53 @@
 (global-set-key (kbd "C-<f10>") 'next-buffer)
 (global-set-key (kbd "<f11>") 'org-clock-goto)
 (global-set-key (kbd "C-s-<f12>") 'my-save-then-publish)
+
+
+;; MOBILE ORG
+(require 'org-mobile)
+
+(setq org-mobile-directory "/Volumes/busyashell/stage/") 
+(setq org-mobile-inbox-for-pull "~/hgfiles/org/inbox.org")
+
+;; journaling hack taken from
+;; http://metajack.im/2009/01/01/journaling-with-emacs-orgmode/
+(defvar org-journal-file "~/hgfiles/org/journal.org"
+  "Path to OrgMode journal file.")
+(defvar org-journal-date-format "%Y-%m-%d"
+  "Date format string for journal headings.")
+
+(defun org-journal-entry ()
+  "Create a new diary entry for today or append to an existing one."
+  (interactive)
+  (switch-to-buffer (find-file org-journal-file))
+  (widen)
+  (let ((today (format-time-string org-journal-date-format)))
+    (beginning-of-buffer)
+    (unless (org-goto-local-search-headings today nil t)
+      ((lambda () 
+         (org-insert-heading)
+         (insert today)
+         (insert "\n\n  \n"))))
+    (beginning-of-buffer)
+    (org-show-entry)
+    (org-narrow-to-subtree)
+    (end-of-buffer)
+    (backward-char 2)
+    (unless (= (current-column) 2)
+      (insert "\n\n  "))))
+
+(global-set-key (kbd "C-c j") 'org-journal-entry)
+
+
+;; set appt waring to 15 minutes prior to appointment
+(setq appt-message-warning-time 15)
+;; use todochiku for growl notifications of events
+(setq org-show-notification-handler
+  '(lambda (notification)
+    (todochiku-message "org-mode notification" notification
+      (todochiku-icon 'emacs))))
+
+;; set org indent
+(setq org-indent-mode t)
+;; set speed commands
+(setq org-use-speed-commands t)

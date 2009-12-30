@@ -21,15 +21,15 @@
 (require 'ipython)
 
 ;; pymacs
-(autoload 'pymacs-apply "pymacs")
-(autoload 'pymacs-call "pymacs")
-(autoload 'pymacs-eval "pymacs" nil t)
-(autoload 'pymacs-exec "pymacs" nil t)
-(autoload 'pymacs-load "pymacs" nil t)
+;(autoload 'pymacs-apply "pymacs")
+;(autoload 'pymacs-call "pymacs")
+;(autoload 'pymacs-eval "pymacs" nil t)
+;(autoload 'pymacs-exec "pymacs" nil t)
+;(autoload 'pymacs-load "pymacs" nil t)
 ;;(eval-after-load "pymacs"
 ;;  '(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY"))
-(pymacs-load "ropemacs" "rope-")
-(setq ropemacs-enable-autoimport t)
+;(pymacs-load "ropemacs" "rope-")
+;(setq ropemacs-enable-autoimport t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; YASnippet
@@ -51,26 +51,26 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Syntax Check using flymake and PyFlakes
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(setq pyflakes "/usr/local/bin/pyflakes")
+;(setq pyflakes "/usr/local/bin/pyflakes")
 
-(when (load "flymake" t)
-   (defun flymake-pyflakes-init ()
-     (let* ((temp-file (flymake-init-create-temp-buffer-copy
- 		       'flymake-create-temp-inplace))
- 	   (local-file (file-relative-name
- 			temp-file
- 			(file-name-directory buffer-file-name))))
-       (list pyflakes (list local-file))))
-   (add-to-list 'flymake-allowed-file-name-masks
- 	       '("\\.py\\'" flymake-pyflakes-init)))
- (add-hook 'find-file-hook 'flymake-find-file-hook)
+;(when (load "flymake" t)
+;   (defun flymake-pyflakes-init ()
+;     (let* ((temp-file (flymake-init-create-temp-buffer-copy
+; 		       'flymake-create-temp-inplace))
+; 	   (local-file (file-relative-name
+; 			temp-file
+; 			(file-name-directory buffer-file-name))))
+;       (list pyflakes (list local-file))))
+;   (add-to-list 'flymake-allowed-file-name-masks
+; 	       '("\\.py\\'" flymake-pyflakes-init)))
+; (add-hook 'find-file-hook 'flymake-find-file-hook)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; DOCTEST MODE
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'auto-mode-alist '("\\.doctest$" . doctest-mode))
-(autoload 'doctest-mode "doctest-mode" "doctest mode" t)
+;(add-to-list 'auto-mode-alist '("\\.doctest$" . doctest-mode))
+;(autoload 'doctest-mode "doctest-mode" "doctest mode" t)
 
 (provide 'init_python)

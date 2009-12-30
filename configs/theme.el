@@ -21,7 +21,7 @@
 
 ;(load-file "~/.emacs.d/vendor/color-theme/color-theme-merbivore/color-theme-merbivore.el")
 ;(color-theme-merbivore)
-
+(set-face-background 'modeline "DarkRed")
 
 
 

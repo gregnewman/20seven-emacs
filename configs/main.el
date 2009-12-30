@@ -47,7 +47,6 @@
 ;; get rid of yes-or-no questions - y or n is enough
 (defalias 'yes-or-no-p 'y-or-n-p)
  
-(require 'uniquify)
 (setq uniquify-buffer-name-style 'reverse)
 (setq uniquify-separator "|")
 (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
@@ -103,13 +102,9 @@
 (setq auto-save-file-name-transforms
       `((".*" ,user-temporary-file-directory t)))
 
-(add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
-
 (setq delete-old-versions t)
 
 (pc-selection-mode)
-
-(server-start)
 
 (setq initial-frame-alist '((top . 50) 
                             (left . 200) 
@@ -150,3 +145,6 @@
 (font-lock-add-keywords nil hexcolour-keywords))
 
 (add-hook 'css-mode-hook 'hexcolour-add-to-font-lock)
+
+;; Change modifier key to meta
+(setq mac-command-modifier 'meta)

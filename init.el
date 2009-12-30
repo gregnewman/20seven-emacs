@@ -1,5 +1,5 @@
 (load-library "iso-transl")
-
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
 (add-to-list 'load-path "~/.emacs.d/vendor/org-mode/lisp")
 (add-to-list 'load-path "~/.emacs.d/vendor/org-mode/contrib/lisp")
 
@@ -38,7 +38,9 @@
 
 (setq custom-file "~/.emacs.d/configs/custom.el")
 
-(require 'dpaste)
+;(require 'dpaste)
+(require 'flymake)
+(require 'dpastede)
 (require 'font-lock)
 (require 'gist)
 (require 'growl)
@@ -46,13 +48,18 @@
 (require 'saveplace)
 (require 'textile-mode)
 (require 'vernacular-time)
-(require 'pymacs)
+;(require 'pymacs)
 (require 'auto-complete)
 (require 'rst)
 (require 'mercurial)
-(require 'flyspell)
+;(require 'flyspell)
+(require 'todochiku)
+;(require 'desktop)
+(require 'uniquify)
 
 (setq confirm-kill-emacs
       (lambda (e)
         (y-or-n-p-with-timeout
          "Really exit Emacs (automatically exits in 5 secs)? " 5 t)))
+
+(server-start)
