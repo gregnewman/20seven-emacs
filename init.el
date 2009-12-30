@@ -16,7 +16,6 @@
     (message "Loaded config file: %s" file)
     ))
 
-
 (load-cfg-files '("browse_kill_ring"
                   "custom"
                   "git"
@@ -37,7 +36,7 @@
 
 (setq custom-file "~/.emacs.d/configs/custom.el")
 
-;(require 'dpaste)
+(require 'dpaste)
 (require 'flymake)
 (require 'dpastede)
 (require 'font-lock)
