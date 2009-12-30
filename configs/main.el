@@ -28,8 +28,6 @@
 ;; show paired parenthasis
 (show-paren-mode 1)
  
-;(set-default-font "-adobe-courier-bold-o-normal--18-180-75-75-m-110-iso8859-13")
-
 ;; TAB => 4*'\b'
 (setq default-tab-width 4)
 
@@ -57,17 +55,6 @@
 
 ;; make side by side buffers function the same as the main window
 (setq truncate-partial-width-windows nil)
-
-;; full screen toggle using command+[RET]
-(defun toggle-fullscreen () 
-  (interactive) 
-  (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen) 
-                                           nil 
-                                           'fullboth)))
-
-;;; NOT USING SINCE EMACS 23 DOESN'T SUPPORT FULL SCREEN IN MAC BUILDS YET
-;(global-set-key [(meta return)] 'toggle-fullscreen) 
-(global-set-key (kbd "C-,") 'toggle-fullscreen)
 
 ;; bury the buffer
 (global-set-key [f8] 'bury-buffer)
@@ -124,15 +111,12 @@
              (kill-buffer buffer)))
       (setq list (cdr list)))))
 
-
 ;; SavePlace
 (setq save-place-file "~/saveplace") ;; keep my ~/ clean
 (setq-default save-place t)                   ;; activate it for all buffers
 
-
 ; CSS color values colored by themselves
 ; http://xahlee.org/emacs/emacs_html.html
-  
 (defvar hexcolour-keywords
 '(("#[abcdef[:digit:]]\\{6\\}"
    (0 (put-text-property
@@ -143,7 +127,6 @@
 
 (defun hexcolour-add-to-font-lock ()
 (font-lock-add-keywords nil hexcolour-keywords))
-
 (add-hook 'css-mode-hook 'hexcolour-add-to-font-lock)
 
 ;; Change modifier key to meta
