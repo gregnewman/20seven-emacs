@@ -20,7 +20,6 @@
 (load-cfg-files '("browse_kill_ring"
                   "custom"
                   "git"
-                  "gnus"
                   "highlight_line"
                   "ido"
                   "javascript"
