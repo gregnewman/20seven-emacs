@@ -3,6 +3,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode nil)
  '(desktop-base-file-name "emacs.desktop")
  '(desktop-path (quote ("~/.emacs.d" "~")))
  '(desktop-save t)
