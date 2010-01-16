@@ -22,15 +22,13 @@
 [submodule "vendor/cheat"]
 	path = vendor/cheat
 	url = git://github.com/defunkt/cheat.git
-[submodule "vendor/yasnippet/snippets/django"]
-	path = vendor/yasnippet/snippets/django
-	url = git@github.com:gregnewman/yasnippet-django.git
 [submodule "vendor/yasnippet/snippets/django-mode"]
 	path = vendor/yasnippet/snippets/django-mode
-	url = git@github.com:gregnewman/yasnippet-django.git
+	url = git://github.com/gregnewman/yasnippet-django.git
 [submodule "vendor/org-mode"]
 	path = vendor/org-mode
 	url = git://repo.or.cz/org-mode.git
-[submodule "vendor/clojure"]
-	path = vendor/clojure
+[submodule "vendor/clojure-mode"]
+	path = vendor/clojure-mode
 	url = git://github.com/jochu/clojure-mode.git
+
