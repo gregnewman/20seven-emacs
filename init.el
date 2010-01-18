@@ -54,6 +54,7 @@
 (require 'todochiku)
 ;(require 'desktop)
 (require 'uniquify)
+(require 'grep-o-matic)
 
 (setq confirm-kill-emacs
       (lambda (e)
