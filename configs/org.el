@@ -28,18 +28,12 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-(setq org-agenda-files (quote ("~/hgfiles/org/tasks.org"
-                               "~/hgfiles/org/test.org"
+(setq org-agenda-files (quote ("~/hgfiles/org/client-projects.org"
+                               "~/hgfiles/org/home-projects.org"
+                               "~/hgfiles/org/studio-projects.org"
                                "~/hgfiles/org/notes.org"
                                "~/hgfiles/org/phone.org"
-                               "~/hgfiles/org/org.org"
-                               "~/hgfiles/org/jodi.org"
-                               "~/hgfiles/org/greg.org"
                                "~/hgfiles/org/inbox.org"
-                               "~/hgfiles/org/huge.org"
-                               "~/hgfiles/org/nasuni.org"
-                               "~/hgfiles/org/studio.org"
-                               "~/hgfiles/org/spotmeeter.org"
                                "~/hgfiles/org/mind.org"
                                "~/hgfiles/org/archive.org")))
 
@@ -361,6 +355,6 @@
       (todochiku-icon 'emacs))))
 
 ;; set org indent
-(setq org-indent-mode t)
+;(setq org-indent-mode t)
 ;; set speed commands
 (setq org-use-speed-commands t)
