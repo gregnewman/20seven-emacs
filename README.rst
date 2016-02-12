@@ -6,7 +6,7 @@ I no longer use these configs.  My new configs can be found at
 https://github.com/gregnewman/emacs-config
 
 
-This is my emacs **OLD** configs which ran under version 23.0.92.
+These are my emacs **OLD** configs which ran under version 23.0.92.
 
 **Usage**
 
