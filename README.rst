@@ -2,7 +2,11 @@
 My Emacs Configuration
 ==================================
 
-This is my emacs configs which I'm currently running under version 23.0.92.
+I no longer use these configs.  My new configs can be found at
+https://github.com/gregnewman/emacs-config
+
+
+This is my emacs **OLD** configs which ran under version 23.0.92.
 
 **Usage**
 
